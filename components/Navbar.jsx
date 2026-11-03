@@ -15,7 +15,7 @@ export default function Navbar() {
       setScrolled(window.scrollY > 24);
 
       // Section spy
-      const sections = ["work", "about", "skills", "playground", "journey", "contact"];
+      const sections = ["about", "work", "skills", "playground", "journey", "contact"];
       const scrollPosition = window.scrollY + 200;
 
       for (const section of sections) {
@@ -54,24 +54,19 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? "bg-[#111311]/90 backdrop-blur-md border-b border-[#303530] py-3.5 shadow-lg shadow-black/40"
-          : "bg-transparent py-5 border-b border-transparent"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
+        ? "bg-[#111311]/90 backdrop-blur-md border-b border-[#303530] py-3.5 shadow-lg shadow-black/40"
+        : "bg-transparent py-5 border-b border-transparent"
+        }`}
     >
       <div className="editorial-container flex items-center justify-between">
         {/* Monogram Brand */}
         <Link
           href="/"
-          className="group flex items-center gap-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#C2F970]"
-          aria-label="Athiq Khan Home"
+          className="group flex items-center gap-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#325ea8]"
         >
-          <span className="font-heading font-extrabold text-2xl tracking-tighter text-[#F4F3ED] group-hover:text-[#C2F970] transition-colors">
-            AK<span className="text-[#C2F970]">.</span>
-          </span>
-          <span className="hidden sm:inline-block font-mono text-[11px] text-[#A5ACA5] tracking-widest uppercase pl-2 border-l border-[#303530]">
-            ATHIQ KHAN
+          <span className="font-heading font-extrabold text-2xl tracking-tighter text-[#F4F3ED] group-hover:text-[#325ea8] transition-colors">
+            AK<span className="text-[#325ea8]">.</span>
           </span>
         </Link>
 
@@ -83,11 +78,10 @@ export default function Navbar() {
               <a
                 key={item.name}
                 href={item.href}
-                className={`font-body text-sm font-medium transition-colors duration-200 relative py-1 ${
-                  isActive
-                    ? "text-[#C2F970]"
-                    : "text-[#A5ACA5] hover:text-[#F4F3ED]"
-                }`}
+                className={`font-body text-sm font-medium transition-colors duration-200 relative py-1 ${isActive
+                  ? "text-[#C2F970]"
+                  : "text-[#A5ACA5] hover:text-[#F4F3ED]"
+                  }`}
               >
                 {item.name}
                 {isActive && (
@@ -98,20 +92,14 @@ export default function Navbar() {
           })}
         </nav>
 
-        {/* Right Action: Availability & Direct CTA */}
+        {/* Right Action: Direct CTA */}
         <div className="hidden lg:flex items-center gap-4">
-          {contactDetails.statusActive && (
-            <div className="status-pill live text-[11px] py-1 px-2.5">
-              <span className="pulse-dot" />
-              <span>{contactDetails.status}</span>
-            </div>
-          )}
           <a
             href="#contact"
-            className="btn-ghost text-xs font-mono font-medium flex items-center gap-1.5 border border-[#303530] hover:border-[#C2F970]"
+            className="text-xs font-mono font-medium flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg border border-[#325ea8] text-[#F4F3ED] bg-[#325ea8]/10 hover:bg-[#325ea8] hover:text-white transition-all shadow-sm group"
           >
             <span>Let&apos;s Connect</span>
-            <ArrowUpRight className="w-3.5 h-3.5 text-[#C2F970]" />
+            <ArrowUpRight className="w-3.5 h-3.5 text-[#325ea8] group-hover:text-white transition-colors" />
           </a>
         </div>
 
@@ -145,12 +133,6 @@ export default function Navbar() {
           </nav>
 
           <div className="pt-6 border-t border-[#303530] flex flex-col gap-4">
-            {contactDetails.statusActive && (
-              <div className="status-pill live self-start">
-                <span className="pulse-dot" />
-                <span>{contactDetails.status}</span>
-              </div>
-            )}
             <p className="font-mono text-xs text-[#A5ACA5]">
               {contactDetails.location} · {contactDetails.college}
             </p>

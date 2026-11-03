@@ -2,38 +2,26 @@
 
 import Image from "next/image";
 import { contactDetails } from "@/data/socials";
-import {
-  GraduationCap,
-  Code,
-  Sparkles,
-  Compass,
-  ArrowUpRight,
-  BookOpen,
-  MapPin
-} from "lucide-react";
+import { ArrowUpRight, MapPin } from "lucide-react";
 
 export default function About() {
   const pillars = [
     {
-      icon: GraduationCap,
       title: "Academic Background",
       detail:
         "B.E. in Artificial Intelligence & Machine Learning at Dhaanish Ahmed Chennai College of Engineering, Chennai.",
     },
     {
-      icon: Code,
       title: "Web Development",
       detail:
         "Practical focus on HTML, CSS, JavaScript, React.js, and Node.js for crafting functional digital experiences.",
     },
     {
-      icon: Sparkles,
       title: "AI & Creative Media",
       detail:
         "Hands-on exploration in prompt engineering, AI video generation diffusion workflows, and precision video editing.",
     },
     {
-      icon: Compass,
       title: "Engineering Mindset",
       detail:
         "Learning through direct implementation, building software solutions, and continuous refinement of fundamentals.",
@@ -43,11 +31,13 @@ export default function About() {
   return (
     <section id="about" className="py-24 md:py-32 border-b border-[#303530] relative bg-[#151815]">
       <div className="editorial-container">
-        {/* Section Header */}
-        <div className="mb-14">
-          <span className="section-label">A LITTLE ABOUT ME</span>
+        {/* Section Header (Centered) */}
+        <div className="text-center max-w-2xl mx-auto mb-14">
+          <span className="section-label !text-[#325ea8] !border-[#325ea8]/30 !bg-[#325ea8]/10">
+            A LITTLE ABOUT ME
+          </span>
           <h2 className="section-heading">
-            Still learning. <span className="text-[#C2F970]">Always building.</span>
+            Still learning. <span className="text-[#325ea8]">Always building.</span>
           </h2>
         </div>
 
@@ -79,14 +69,10 @@ export default function About() {
                       {contactDetails.degree}
                     </p>
                   </div>
-                  <div className="status-pill live text-[10px] py-0.5 px-2">
-                    <span className="pulse-dot" />
-                    <span>Active</span>
-                  </div>
                 </div>
 
                 <div className="flex items-center gap-2 text-xs font-mono text-[#6E756E] pt-1">
-                  <MapPin className="w-3.5 h-3.5 text-[#C2F970]" />
+                  <MapPin className="w-3.5 h-3.5 text-[#325ea8]" />
                   <span>{contactDetails.location}</span>
                 </div>
               </div>
@@ -98,7 +84,7 @@ export default function About() {
             {/* The Verified Biography text */}
             <div className="space-y-5 font-body text-base sm:text-lg text-[#A5ACA5] leading-relaxed">
               <p className="text-[#F4F3ED] font-medium text-lg sm:text-xl leading-relaxed">
-                I&apos;m <span className="text-[#C2F970] font-semibold">M. Athiq Khan</span>, an Artificial Intelligence and Machine Learning engineering student at Dhaanish Ahmed Chennai College of Engineering.
+                I&apos;m <span className="text-[#325ea8] font-semibold">M. Athiq Khan</span>, an Artificial Intelligence and Machine Learning engineering student at Dhaanish Ahmed Chennai College of Engineering.
               </p>
 
               <p>
@@ -120,27 +106,19 @@ export default function About() {
                 Core Foundations
               </h4>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {pillars.map((item, idx) => {
-                  const Icon = item.icon;
-                  return (
-                    <div
-                      key={idx}
-                      className="p-4 rounded-xl bg-[#1B1E1B] border border-[#303530] hover:border-[#444B44] transition-colors"
-                    >
-                      <div className="flex items-center gap-2.5 mb-1.5">
-                        <div className="p-1.5 rounded-md bg-[#202420] text-[#C2F970]">
-                          <Icon className="w-4 h-4" />
-                        </div>
-                        <h5 className="font-heading font-bold text-sm text-[#F4F3ED]">
-                          {item.title}
-                        </h5>
-                      </div>
-                      <p className="font-body text-xs text-[#A5ACA5] leading-relaxed">
-                        {item.detail}
-                      </p>
-                    </div>
-                  );
-                })}
+                {pillars.map((item, idx) => (
+                  <div
+                    key={idx}
+                    className="p-4 rounded-xl bg-[#1B1E1B] border border-[#303530] hover:border-[#444B44] transition-colors"
+                  >
+                    <h5 className="font-heading font-bold text-sm text-[#F4F3ED] mb-1.5">
+                      {item.title}
+                    </h5>
+                    <p className="font-body text-xs text-[#A5ACA5] leading-relaxed">
+                      {item.detail}
+                    </p>
+                  </div>
+                ))}
               </div>
             </div>
 
@@ -148,9 +126,12 @@ export default function About() {
             <div className="pt-2 flex flex-wrap items-center gap-4">
               <a href="#skills" className="btn-secondary text-xs">
                 <span>View Full Toolkit</span>
-                <ArrowUpRight className="w-3.5 h-3.5 text-[#C2F970]" />
+                <ArrowUpRight className="w-3.5 h-3.5 text-[#325ea8]" />
               </a>
-              <a href="#contact" className="btn-ghost text-xs">
+              <a
+                href="#contact"
+                className="text-xs font-medium px-4 py-2.5 rounded-lg bg-[#325ea8] hover:bg-[#264b8a] text-white transition-all shadow-md shadow-[#325ea8]/20"
+              >
                 <span>Get In Touch →</span>
               </a>
             </div>

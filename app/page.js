@@ -19,11 +19,13 @@ export default function Home() {
         {/* Hero Section */}
         <Hero />
 
+        {/* About Athiq Khan */}
+        <About />
+
         {/* Selected Projects Showcase */}
         <Projects />
 
-        {/* About Athiq Khan */}
-        <About />
+
 
         {/* Skills & Toolkit */}
         <Skills />

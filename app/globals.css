@@ -11,21 +11,21 @@
   --bg-card: #202420;
   --bg-card-hover: #262B26;
   --bg-elevated: #282E28;
-  
+
   --text-primary: #F4F3ED;
   --text-secondary: #A5ACA5;
   --text-muted: #6E756E;
-  
+
   --accent: #C2F970;
   --accent-hover: #D5FFA0;
-  --accent-muted: rgba(194, 249, 112, 0.12);
+  --accent-muted: rgba(194, 249, 112, 0.28);
   --accent-glow: rgba(194, 249, 112, 0.28);
   --accent-border: rgba(194, 249, 112, 0.35);
 
   --border: #303530;
   --border-subtle: #242924;
   --border-light: #444B44;
-  
+
   --radius-sm: 6px;
   --radius-md: 10px;
   --radius-lg: 16px;
@@ -44,7 +44,9 @@
    BASE & RESET
    ========================================================================== */
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -69,7 +71,12 @@ body {
 }
 
 /* Headings */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-heading);
   color: var(--text-primary);
   font-weight: 700;
@@ -100,20 +107,26 @@ a {
   width: 8px;
   height: 8px;
 }
+
 ::-webkit-scrollbar-track {
   background: var(--bg-main);
 }
+
 ::-webkit-scrollbar-thumb {
   background: var(--border);
   border-radius: 4px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: var(--border-light);
 }
 
 /* Reduced Motion Preference */
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
+
+  *,
+  *::before,
+  *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
@@ -310,15 +323,26 @@ a {
 }
 
 @keyframes pulse-ring {
-  0% { transform: scale(0.8); opacity: 0.7; }
-  60% { transform: scale(2.2); opacity: 0; }
-  100% { transform: scale(2.2); opacity: 0; }
+  0% {
+    transform: scale(0.8);
+    opacity: 0.7;
+  }
+
+  60% {
+    transform: scale(2.2);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(2.2);
+    opacity: 0;
+  }
 }
 
 /* Editorial Grid Background Helper */
 .bg-subtle-grid {
   background-image: linear-gradient(to right, #1B1E1B 1px, transparent 1px),
-                    linear-gradient(to bottom, #1B1E1B 1px, transparent 1px);
+    linear-gradient(to bottom, #1B1E1B 1px, transparent 1px);
   background-size: 40px 40px;
 }
 
@@ -330,6 +354,7 @@ a {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -340,9 +365,22 @@ a {
     opacity: 0;
     transform: scale(0.96) translateY(8px);
   }
+
   to {
     opacity: 1;
     transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes floatSlow {
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-8px);
   }
 }
 
@@ -361,6 +399,7 @@ a {
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
 .no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -391,5 +430,3 @@ a {
     display: none !important;
   }
 }
-
-

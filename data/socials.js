@@ -23,8 +23,8 @@ export const contactDetails = {
 };
 
 export const navLinks = [
-  { name: "Work", href: "#work" },
   { name: "About", href: "#about" },
+  { name: "Work", href: "#work" },
   { name: "Skills", href: "#skills" },
   { name: "Playground", href: "#playground" },
   { name: "Journey", href: "#journey" },
