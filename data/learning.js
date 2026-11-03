@@ -7,13 +7,13 @@ export const learningGoals = [
   {
     id: "goal-1",
     index: "01",
-    title: "Improving React.js & Next.js Application Development",
-    category: "Frontend Engineering",
+    title: "Improving React.js & Node.js Application Development",
+    category: "Web & Backend Engineering",
     description:
-      "Deepening practical knowledge of Next.js App Router patterns, Server vs Client components, optimized caching strategies, and robust responsive layout architecture.",
+      "Deepening practical knowledge of Node.js server architecture, Express middleware, RESTful API endpoints, and robust responsive layout architecture.",
     status: "Active Daily Practice",
     focusAreas: [
-      "App Router state patterns & parallel routes",
+      "Node.js server patterns & REST API design",
       "Custom hook design & component lifecycle",
       "CSS architecture & accessible component patterns"
     ]

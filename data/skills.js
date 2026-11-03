@@ -30,9 +30,9 @@ export const skillGroups = [
         detail: "Component lifecycle, functional hooks, state management, and reusable UI systems."
       },
       {
-        name: "Next.js",
-        status: "Framework",
-        detail: "App Router, Server & Client Components, file-based routing, and SSR/SSG."
+        name: "Node.js",
+        status: "Backend Runtime",
+        detail: "Server-side JavaScript runtime, RESTful API development, asynchronous I/O, and npm ecosystem."
       }
     ]
   },

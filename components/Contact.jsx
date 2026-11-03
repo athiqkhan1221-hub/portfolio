@@ -59,7 +59,7 @@ export default function Contact() {
       `*Email:* ${formData.email}\n` +
       `*Topic:* ${formData.purpose}\n\n` +
       `*Message:*\n${formData.message}`;
-    return `https://wa.me/919043395299?text=${encodeURIComponent(text)}`;
+    return `${contactDetails.whatsapp}?text=${encodeURIComponent(text)}`;
   };
 
   const handleSubmit = (e) => {
@@ -207,7 +207,7 @@ export default function Contact() {
 
                 {/* WhatsApp */}
                 <a
-                  href="https://wa.me/919043395299"
+                  href={contactDetails.whatsapp}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-3 rounded-lg bg-[#111311] border border-[#303530] hover:border-[#C2F970] flex items-center justify-between text-sm transition-colors group"
@@ -217,7 +217,7 @@ export default function Contact() {
                     <span className="font-heading font-medium">WhatsApp</span>
                   </div>
                   <span className="font-mono text-xs text-[#6E756E] group-hover:text-[#A5ACA5]">
-                    +91 90433 95299
+                    {contactDetails.phone}
                   </span>
                 </a>
               </div>
@@ -248,7 +248,7 @@ export default function Contact() {
                     Sent to WhatsApp!
                   </h3>
                   <p className="font-body text-sm text-[#A5ACA5] max-w-md mx-auto leading-relaxed">
-                    Thank you, <strong className="text-[#F4F3ED]">{formData.name}</strong>. WhatsApp has been opened with your pre-filled message for Athiq (<strong className="text-[#C2F970]">+91 9043395299</strong>).
+                    Thank you, <strong className="text-[#F4F3ED]">{formData.name}</strong>. WhatsApp has been opened with your pre-filled message for Athiq (<strong className="text-[#C2F970]">{contactDetails.phone}</strong>).
                   </p>
 
                   <div className="pt-4 flex flex-wrap items-center justify-center gap-3">

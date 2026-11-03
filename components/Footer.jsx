@@ -5,13 +5,15 @@ import { contactDetails, navLinks } from "@/data/socials";
 import { ArrowUp, Mail } from "lucide-react";
 import { GithubIcon, LinkedinIcon, InstagramIcon, WhatsAppIcon } from "./Icons";
 
-import { useState, useEffect } from "react";
+import { useRef, useEffect } from "react";
 
 export default function Footer() {
-  const [currentYear, setCurrentYear] = useState("2025");
+  const yearRef = useRef(null);
 
   useEffect(() => {
-    setCurrentYear(new Date().getFullYear().toString());
+    if (yearRef.current) {
+      yearRef.current.textContent = new Date().getFullYear().toString();
+    }
   }, []);
 
   const scrollToTop = () => {
@@ -79,7 +81,7 @@ export default function Footer() {
               <InstagramIcon className="w-4 h-4" />
             </a>
             <a
-              href="https://wa.me/919043395299"
+              href={contactDetails.whatsapp}
               target="_blank"
               rel="noopener noreferrer"
               className="p-2.5 rounded-lg bg-[#1B1E1B] border border-[#303530] text-[#A5ACA5] hover:text-[#C2F970] hover:border-[#C2F970] transition-colors"
@@ -109,7 +111,7 @@ export default function Footer() {
 
         {/* Bottom Legal & Programmatic Date Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-[#6E756E]">
-          <p>© {currentYear} M. Athiq Khan. All rights reserved.</p>
+          <p>© <span ref={yearRef}>2025</span> M. Athiq Khan. All rights reserved.</p>
           <div className="flex items-center gap-4">
             <span>Chennai, India</span>
             <span>•</span>

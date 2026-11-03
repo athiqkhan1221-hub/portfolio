@@ -16,7 +16,7 @@ export const projects = [
     role: "Sole Designer & Developer",
     featured: true,
     accentColor: "#C2F970",
-    technologies: ["Next.js", "React.js", "JavaScript", "CSS Modules", "HTML5"],
+    technologies: ["Node.js", "React.js", "JavaScript", "CSS Modules", "HTML5"],
     demoUrl: "#", // Active on this deployment
     githubUrl: null, // [EDITABLE: Provide your GitHub repo link when public]
     date: "2025 – Present",
@@ -29,7 +29,7 @@ export const projects = [
       "Implemented an editorial dark UI utilizing a strict color token system (#111311 background, #C2F970 lime accent), responsive typography (Manrope & Inter), modular architecture, and structured data handling for instant updates.",
     process: [
       "Designed high-contrast typography hierarchy and color balance in dark mode.",
-      "Engineered reusable component architecture using Next.js App Router.",
+      "Engineered reusable component architecture using React.js and Node.js environment.",
       "Implemented accessible modal interactions and responsive drawer navigation.",
       "Structured all portfolio data into lightweight, maintainable JavaScript files."
     ],

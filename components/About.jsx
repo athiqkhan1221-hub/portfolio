@@ -24,7 +24,7 @@ export default function About() {
       icon: Code,
       title: "Web Development",
       detail:
-        "Practical focus on HTML, CSS, JavaScript, React.js, and Next.js for crafting functional digital experiences.",
+        "Practical focus on HTML, CSS, JavaScript, React.js, and Node.js for crafting functional digital experiences.",
     },
     {
       icon: Sparkles,
@@ -102,7 +102,7 @@ export default function About() {
               </p>
 
               <p>
-                I&apos;m interested in how technology moves from an idea to something useful. I&apos;ve studied web technologies including HTML, CSS, JavaScript, React.js, and Next.js, alongside Python and prompt engineering.
+                I&apos;m interested in how technology moves from an idea to something useful. I&apos;ve studied web technologies including HTML, CSS, JavaScript, React.js, and Node.js, alongside Python and prompt engineering.
               </p>
 
               <p>

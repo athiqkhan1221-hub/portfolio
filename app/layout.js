@@ -32,7 +32,7 @@ export const metadata = {
     "Full-Stack Web Developer",
     "AIML Engineering Student",
     "React.js",
-    "Next.js",
+    "Node.js",
     "Python",
     "Chennai Developer",
     "AI Video Generation",
@@ -79,6 +79,7 @@ export const viewport = {
 };
 
 import AthiqChatbot from "@/components/AthiqChatbot";
+import PortfolioWrapper from "@/components/PortfolioWrapper";
 
 export default function RootLayout({ children }) {
   return (
@@ -87,7 +88,9 @@ export default function RootLayout({ children }) {
       className={`${manrope.variable} ${inter.variable} ${jetbrainsMono.variable} scroll-smooth`}
     >
       <body className="bg-[#111311] text-[#F4F3ED] antialiased selection:bg-[#C2F970] selection:text-[#111311]">
-        {children}
+        <PortfolioWrapper>
+          {children}
+        </PortfolioWrapper>
         <AthiqChatbot />
       </body>
     </html>

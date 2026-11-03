@@ -2,10 +2,9 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import { X, Play, Pause, Copy, Check, Sparkles, Film, Sliders } from "lucide-react";
+import { X, Copy, Check, Sparkles, Film, Sliders } from "lucide-react";
 
 export default function PlaygroundModal({ item, onClose }) {
-  const [isPlaying, setIsPlaying] = useState(false);
   const [copied, setCopied] = useState(false);
 
   useEffect(() => {
@@ -162,7 +161,7 @@ export default function PlaygroundModal({ item, onClose }) {
                 <span>Tools &amp; Categories</span>
               </div>
               <div className="flex flex-wrap gap-1.5">
-                {item.tools.map((t) => (
+                {item.tools?.map((t) => (
                   <span
                     key={t}
                     className="font-mono text-xs px-2.5 py-1 rounded bg-[#111311] border border-[#303530] text-[#C2F970]"

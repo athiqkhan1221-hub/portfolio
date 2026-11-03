@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useId } from "react";
 import Link from "next/link";
 import { contactDetails } from "@/data/socials";
 import {
@@ -19,6 +19,12 @@ import { WhatsAppIcon } from "./Icons";
 // CUTE ROBOT VECTOR CHARACTER COMPONENT
 // ============================================================================
 function CuteRobotFigure({ mood = "happy", size = 48, isHovered = false }) {
+  const rawId = useId();
+  const safeId = rawId.replace(/[^a-zA-Z0-9_-]/g, "");
+  const bodyId = `robotBody_${safeId}`;
+  const visorId = `robotVisor_${safeId}`;
+  const eyeGlowId = `eyeGlow_${safeId}`;
+
   return (
     <div
       style={{ width: size, height: size }}
@@ -31,20 +37,16 @@ function CuteRobotFigure({ mood = "happy", size = 48, isHovered = false }) {
         className="w-full h-full drop-shadow-md transition-transform duration-300"
       >
         <defs>
-          <linearGradient id="robotBody" x1="0%" y1="0%" x2="100%" y2="100%">
+          <linearGradient id={bodyId} x1="0%" y1="0%" x2="100%" y2="100%">
             <stop offset="0%" stopColor="#282E28" />
             <stop offset="50%" stopColor="#1E231E" />
             <stop offset="100%" stopColor="#151815" />
           </linearGradient>
-          <linearGradient id="robotVisor" x1="0%" y1="0%" x2="0%" y2="100%">
+          <linearGradient id={visorId} x1="0%" y1="0%" x2="0%" y2="100%">
             <stop offset="0%" stopColor="#0B0D0B" />
             <stop offset="100%" stopColor="#151815" />
           </linearGradient>
-          <linearGradient id="neonGlow" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#E2FFA8" />
-            <stop offset="100%" stopColor="#C2F970" />
-          </linearGradient>
-          <filter id="eyeGlow" x="-20%" y="-20%" width="140%" height="140%">
+          <filter id={eyeGlowId} x="-20%" y="-20%" width="140%" height="140%">
             <feGaussianBlur stdDeviation="1.5" result="blur" />
             <feComposite in="SourceGraphic" in2="blur" operator="over" />
           </filter>
@@ -79,7 +81,7 @@ function CuteRobotFigure({ mood = "happy", size = 48, isHovered = false }) {
           width="62"
           height="54"
           rx="18"
-          fill="url(#robotBody)"
+          fill={`url(#${bodyId})`}
           stroke="#384038"
           strokeWidth="2.5"
         />
@@ -91,7 +93,7 @@ function CuteRobotFigure({ mood = "happy", size = 48, isHovered = false }) {
           width="48"
           height="36"
           rx="12"
-          fill="url(#robotVisor)"
+          fill={`url(#${visorId})`}
           stroke="#262B26"
           strokeWidth="1.5"
         />
@@ -108,7 +110,7 @@ function CuteRobotFigure({ mood = "happy", size = 48, isHovered = false }) {
         {/* --- Expressive Eyes --- */}
         {mood === "wink" || isHovered ? (
           // Playful Wink Expression
-          <g filter="url(#eyeGlow)">
+          <g filter={`url(#${eyeGlowId})`}>
             {/* Left Eye: Smiling Happy Arch */}
             <path
               d="M34 50 Q40 43 45 50"
@@ -123,7 +125,7 @@ function CuteRobotFigure({ mood = "happy", size = 48, isHovered = false }) {
           </g>
         ) : mood === "happy" ? (
           // Happy Arches Expression (^ ^)
-          <g filter="url(#eyeGlow)">
+          <g filter={`url(#${eyeGlowId})`}>
             <path
               d="M33 49 Q39 42 45 49"
               stroke="#C2F970"
@@ -141,7 +143,7 @@ function CuteRobotFigure({ mood = "happy", size = 48, isHovered = false }) {
           </g>
         ) : (
           // Curious / Open Eyes
-          <g filter="url(#eyeGlow)">
+          <g filter={`url(#${eyeGlowId})`}>
             <circle cx="39" cy="48" r="5.5" fill="#C2F970" />
             <circle cx="40.5" cy="46.5" r="2" fill="#FFFFFF" />
             <circle cx="61" cy="48" r="5.5" fill="#C2F970" />
@@ -178,7 +180,7 @@ function CuteRobotFigure({ mood = "happy", size = 48, isHovered = false }) {
 const knowledgeBase = [
   {
     triggers: ["who are you", "who is athiq", "about", "bio", "background", "introduce", "intro", "college", "education", "degree"],
-    reply: `Beep boop! 🤖 I'm **Athiq Bot**, personal companion for **M. Athiq Khan**!\n\nAthiq is an Artificial Intelligence and Machine Learning (AIML) engineering student at **Dhaanish Ahmed Chennai College of Engineering** in Chennai, India.\n\nHe specializes in **full-stack web development** (React.js, Next.js, JavaScript, Python) while creating visual magic with **prompt engineering, AI video generation, and video editing**! ✨`
+    reply: `Beep boop! 🤖 I'm **Athiq Bot**, personal companion for **M. Athiq Khan**!\n\nAthiq is an Artificial Intelligence and Machine Learning (AIML) engineering student at **Dhaanish Ahmed Chennai College of Engineering** in Chennai, India.\n\nHe specializes in **full-stack web development** (React.js, Node.js, JavaScript, Python) while creating visual magic with **prompt engineering, AI video generation, and video editing**! ✨`
   },
   {
     triggers: ["internship", "hire", "job", "freelance", "opportunity", "available", "work with", "collaborate"],
@@ -186,11 +188,11 @@ const knowledgeBase = [
   },
   {
     triggers: ["skills", "toolkit", "technologies", "tech stack", "languages", "what do you use", "tools"],
-    reply: `Here's Athiq's super-powered toolkit ⚡:\n\n• **Frontend:** HTML5, CSS3, JavaScript (ES6+), React.js, Next.js App Router\n• **Programming:** Python (Algorithms, Data Structures, AI Scripting)\n• **AI Exploration:** Prompt Engineering, Machine Learning concepts\n• **Creative Media:** AI Video Generation & Timeline Video Editing\n• **Full-Stack:** RESTful APIs, Backend Foundations & Database Integration`
+    reply: `Here's Athiq's super-powered toolkit ⚡:\n\n• **Frontend & Backend:** HTML5, CSS3, JavaScript (ES6+), React.js, Node.js\n• **Programming:** Python (Algorithms, Data Structures, AI Scripting)\n• **AI Exploration:** Prompt Engineering, Machine Learning concepts\n• **Creative Media:** AI Video Generation & Timeline Video Editing\n• **Full-Stack:** RESTful APIs, Backend Foundations & Database Integration`
   },
   {
     triggers: ["projects", "what have you built", "work", "portfolio projects", "course explorer", "prompt lab"],
-    reply: `Athiq has built some really cool projects! 🛠️\n\n1. **Personal Developer Portfolio:** Bespoke editorial dark web experience built with Next.js & React.\n2. **Course Explorer Web App:** React application with live search and filter tags.\n3. **AI Video Creative Showcase:** Visual experiments in text-to-video diffusion & editing.\n4. **Screen-Time Awareness Dashboard:** Digital wellbeing metrics and focus analytics.\n5. **AI Prompt Lab:** Systematic testing of zero-shot vs few-shot system prompts.\n\nCheck them out in the [Selected Work](#work) section!`
+    reply: `Athiq has built some really cool projects! 🛠️\n\n1. **Personal Developer Portfolio:** Bespoke editorial dark web experience built with Node.js & React.\n2. **Course Explorer Web App:** React application with live search and filter tags.\n3. **AI Video Creative Showcase:** Visual experiments in text-to-video diffusion & editing.\n4. **Screen-Time Awareness Dashboard:** Digital wellbeing metrics and focus analytics.\n5. **AI Prompt Lab:** Systematic testing of zero-shot vs few-shot system prompts.\n\nCheck them out in the [Selected Work](/#work) section!`
   },
   {
     triggers: ["contact", "reach", "email", "phone", "whatsapp", "number", "call", "message", "instagram", "linkedin"],
@@ -198,7 +200,7 @@ const knowledgeBase = [
   },
   {
     triggers: ["ai video", "video editing", "video", "playground", "creative", "reels"],
-    reply: `Athiq loves the intersection of code and visual cinema! 🎬\n\nIn his [Creative Playground](#playground), he directs text-to-video diffusion models for 9:16 vertical product commercials, 16:9 cinematic tracking shots, and precision beat-sync video editing.`
+    reply: `Athiq loves the intersection of code and visual cinema! 🎬\n\nIn his [Creative Playground](/#playground), he directs text-to-video diffusion models for 9:16 vertical product commercials, 16:9 cinematic tracking shots, and precision beat-sync video editing.`
   },
   {
     triggers: ["location", "city", "where do you live", "where are you from", "india", "chennai"],
@@ -209,8 +211,8 @@ const knowledgeBase = [
     reply: `Athiq studies Python and AIML as his university degree at Dhaanish Ahmed College! 🧠 He enjoys coding algorithmic solutions, understanding model pipelines, and testing structured prompt conditioning.`
   },
   {
-    triggers: ["react", "nextjs", "next.js", "frontend", "web dev"],
-    reply: `Frontend engineering is Athiq's primary passion! 💻 He crafts modular, responsive experiences using **React.js** and **Next.js App Router**, prioritizing clean component hierarchy and high performance.`
+    triggers: ["react", "nodejs", "node.js", "frontend", "backend", "web dev"],
+    reply: `Web development is Athiq's primary passion! 💻 He crafts modular, responsive experiences using **React.js** and **Node.js**, prioritizing clean component hierarchy and high performance.`
   }
 ];
 
@@ -237,10 +239,14 @@ export default function AthiqChatbot() {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
+  const handleOpenChat = () => {
+    setIsOpen(true);
+    setHasInteracted(true);
+  };
+
   useEffect(() => {
     if (isOpen) {
       scrollToBottom();
-      setHasInteracted(true);
       setTimeout(() => inputRef.current?.focus(), 250);
     }
   }, [isOpen, messages, isTyping]);
@@ -272,7 +278,7 @@ export default function AthiqChatbot() {
     if (!text) return;
 
     const userMsg = {
-      id: `user-${Date.now()}`,
+      id: `user-${messages.length + 1}`,
       sender: "user",
       text: text,
       time: new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })
@@ -332,7 +338,7 @@ export default function AthiqChatbot() {
                     rel="noopener noreferrer"
                     className="text-[#C2F970] underline hover:text-[#D5FFA0] font-semibold"
                     onClick={() => {
-                      if (match[2].startsWith("#")) setIsOpen(false);
+                      if (match[2].startsWith("#") || match[2].startsWith("/#")) setIsOpen(false);
                     }}
                   >
                     {match[1]}
@@ -396,10 +402,10 @@ export default function AthiqChatbot() {
 
             <div className="flex items-center gap-1.5">
               <a
-                href="https://wa.me/919043395299"
+                href={contactDetails.whatsapp}
                 target="_blank"
                 rel="noopener noreferrer"
-                title="Direct WhatsApp (+91 9043395299)"
+                title={`Direct WhatsApp (${contactDetails.phone})`}
                 className="p-1.5 rounded-xl text-[#A5ACA5] hover:text-[#25D366] hover:bg-[#202420] transition-colors"
                 aria-label="Direct WhatsApp"
               >
@@ -525,7 +531,7 @@ export default function AthiqChatbot() {
           {/* Floating Speech Bubble Inviting to Touch */}
           {!hasInteracted && (
             <div
-              onClick={() => setIsOpen(true)}
+              onClick={handleOpenChat}
               className="mb-2.5 mr-1 cursor-pointer bg-[#1E231E]/95 backdrop-blur-md border border-[#C2F970]/50 text-[#F4F3ED] text-xs font-heading font-semibold py-2 px-3.5 rounded-2xl rounded-br-none shadow-xl shadow-black/60 flex items-center gap-2 transition-all hover:scale-105 animate-bounce [animation-duration:2.5s]"
             >
               <span className="text-sm">👋</span>
@@ -539,7 +545,7 @@ export default function AthiqChatbot() {
           {/* Interactive Floating Cute Robot Stage */}
           <button
             type="button"
-            onClick={() => setIsOpen(true)}
+            onClick={handleOpenChat}
             onMouseEnter={() => {
               setIsLauncherHovered(true);
               setRobotMood("wink");

@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState } from "react";
@@ -109,11 +110,10 @@ export default function Hero() {
                   <button
                     type="button"
                     onClick={() => setActiveTab("config")}
-                    className={`px-2.5 py-1 text-[11px] font-mono rounded flex items-center gap-1.5 transition-colors ${
-                      activeTab === "config"
+                    className={`px-2.5 py-1 text-[11px] font-mono rounded flex items-center gap-1.5 transition-colors ${activeTab === "config"
                         ? "bg-[#111311] text-[#C2F970] border border-[#303530]"
                         : "text-[#A5ACA5] hover:text-[#F4F3ED]"
-                    }`}
+                      }`}
                   >
                     <Code2 className="w-3 h-3" />
                     <span>athiq.js</span>
@@ -121,11 +121,10 @@ export default function Hero() {
                   <button
                     type="button"
                     onClick={() => setActiveTab("terminal")}
-                    className={`px-2.5 py-1 text-[11px] font-mono rounded flex items-center gap-1.5 transition-colors ${
-                      activeTab === "terminal"
+                    className={`px-2.5 py-1 text-[11px] font-mono rounded flex items-center gap-1.5 transition-colors ${activeTab === "terminal"
                         ? "bg-[#111311] text-[#C2F970] border border-[#303530]"
                         : "text-[#A5ACA5] hover:text-[#F4F3ED]"
-                    }`}
+                      }`}
                   >
                     <Terminal className="w-3 h-3" />
                     <span>env.sh</span>
@@ -133,11 +132,10 @@ export default function Hero() {
                   <button
                     type="button"
                     onClick={() => setActiveTab("creative")}
-                    className={`px-2.5 py-1 text-[11px] font-mono rounded flex items-center gap-1.5 transition-colors ${
-                      activeTab === "creative"
+                    className={`px-2.5 py-1 text-[11px] font-mono rounded flex items-center gap-1.5 transition-colors ${activeTab === "creative"
                         ? "bg-[#111311] text-[#C2F970] border border-[#303530]"
                         : "text-[#A5ACA5] hover:text-[#F4F3ED]"
-                    }`}
+                      }`}
                   >
                     <Sparkles className="w-3 h-3" />
                     <span>ai.spec</span>
@@ -158,7 +156,7 @@ export default function Hero() {
               <div className="p-5 font-mono text-xs leading-relaxed overflow-x-auto min-h-[310px] bg-[#111311]">
                 {activeTab === "config" && (
                   <div className="space-y-1">
-                    <p className="text-[#6E756E]">// Athiq Khan · Developer Profile</p>
+                    <p className="text-[#6E756E]">{"// Athiq Khan · Developer Profile"}</p>
                     <p>
                       <span className="text-[#C2F970]">const</span> developer = &#123;
                     </p>
@@ -178,7 +176,7 @@ export default function Hero() {
                       languages: [<span className="text-[#F4F3ED]">&quot;Python&quot;</span>, <span className="text-[#F4F3ED]">&quot;JavaScript&quot;</span>],
                     </p>
                     <p className="pl-4">
-                      frontend: [<span className="text-[#C2F970]">&quot;React.js&quot;</span>, <span className="text-[#C2F970]">&quot;Next.js&quot;</span>, <span className="text-[#F4F3ED]">&quot;HTML/CSS&quot;</span>],
+                      webStack: [<span className="text-[#C2F970]">&quot;React.js&quot;</span>, <span className="text-[#C2F970]">&quot;Node.js&quot;</span>, <span className="text-[#F4F3ED]">&quot;HTML/CSS&quot;</span>],
                     </p>
                     <p className="pl-4">
                       creativeInterests: [
@@ -227,7 +225,7 @@ export default function Hero() {
 
                 {activeTab === "creative" && (
                   <div className="space-y-1.5 text-[#A5ACA5]">
-                    <p className="text-[#C2F970]">// Creative Media &amp; AI Directing Specs</p>
+                    <p className="text-[#C2F970]">{"// Creative Media & AI Directing Specs"}</p>
                     <p className="text-[#F4F3ED]">
                       [Pipeline]: <span className="text-[#C2F970]">Generative Diffusion + Beat Sync</span>
                     </p>

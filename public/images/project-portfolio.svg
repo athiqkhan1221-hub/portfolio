@@ -8,7 +8,7 @@
   <circle cx="96" cy="46" r="6" fill="#3A403A"/>
   <text x="128" y="50" fill="#A5ACA5" font-family="'JetBrains Mono', monospace" font-size="12" letter-spacing="1">athiq-portfolio / app / page.js</text>
   <rect x="680" y="38" width="72" height="18" rx="9" fill="#111311" stroke="#303530"/>
-  <text x="696" y="51" fill="#C2F970" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600">NEXT.JS</text>
+  <text x="696" y="51" fill="#C2F970" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600">NODE.JS</text>
 
   <!-- Editorial Layout Preview -->
   <g transform="translate(56, 96)">
