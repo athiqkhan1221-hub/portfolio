@@ -24,21 +24,25 @@ export default function Projects() {
           </p>
         </div>
 
-        {/* Project Editorial Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* Project Editorial Grid (Center Aligned) */}
+        <div className="flex flex-wrap justify-center gap-6 max-w-7xl mx-auto">
           {projects.map((project) => (
-            <ProjectCard
+            <div
               key={project.id}
-              project={project}
-              onOpenDetails={setActiveModalProject}
-            />
+              className="w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] flex"
+            >
+              <ProjectCard
+                project={project}
+                onOpenDetails={setActiveModalProject}
+              />
+            </div>
           ))}
         </div>
 
         {/* Editorial Project Note Banner */}
         <div className="mt-12 p-6 rounded-xl bg-[#1B1E1B] border border-[#303530] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
           <div className="flex items-center gap-3">
-            <FolderGit2 className="w-5 h-5 text-[#C2F970] shrink-0" />
+            <FolderGit2 className="w-5 h-5 text-[#325ea8] shrink-0" />
             <p className="font-body text-xs sm:text-sm text-[#A5ACA5]">
               <strong className="text-[#F4F3ED]">Transparency note:</strong> These projects represent ongoing academic coursework and personal experiments. As live deployments and repositories are updated, links will become active automatically.
             </p>

@@ -2,18 +2,18 @@
   <rect width="405" height="720" fill="#111311"/>
   <rect x="12" y="12" width="381" height="696" rx="12" fill="#1B1E1B" stroke="#303530"/>
   <!-- Splash droplets visualization -->
-  <circle cx="202" cy="360" r="14" fill="#C2F970"/>
-  <circle cx="160" cy="320" r="8" fill="#C2F970" opacity="0.8"/>
-  <circle cx="250" cy="310" r="10" fill="#C2F970" opacity="0.8"/>
-  <circle cx="130" cy="400" r="6" fill="#C2F970" opacity="0.6"/>
-  <circle cx="270" cy="410" r="7" fill="#C2F970" opacity="0.6"/>
-  <circle cx="202" cy="260" r="5" fill="#C2F970" opacity="0.7"/>
-  <circle cx="202" cy="460" r="12" fill="#C2F970" opacity="0.5"/>
+  <circle cx="202" cy="360" r="14" fill="#325ea8"/>
+  <circle cx="160" cy="320" r="8" fill="#325ea8" opacity="0.8"/>
+  <circle cx="250" cy="310" r="10" fill="#325ea8" opacity="0.8"/>
+  <circle cx="130" cy="400" r="6" fill="#325ea8" opacity="0.6"/>
+  <circle cx="270" cy="410" r="7" fill="#325ea8" opacity="0.6"/>
+  <circle cx="202" cy="260" r="5" fill="#325ea8" opacity="0.7"/>
+  <circle cx="202" cy="460" r="12" fill="#325ea8" opacity="0.5"/>
   <!-- Ripple rings -->
-  <ellipse cx="202" cy="480" rx="110" ry="25" fill="none" stroke="#C2F970" stroke-width="1.5" opacity="0.4"/>
-  <ellipse cx="202" cy="480" rx="60" ry="14" fill="none" stroke="#C2F970" stroke-width="1.5" opacity="0.7"/>
+  <ellipse cx="202" cy="480" rx="110" ry="25" fill="none" stroke="#325ea8" stroke-width="1.5" opacity="0.4"/>
+  <ellipse cx="202" cy="480" rx="60" ry="14" fill="none" stroke="#325ea8" stroke-width="1.5" opacity="0.7"/>
   <!-- UI Overlays -->
   <text x="36" y="80" fill="#F4F3ED" font-family="'Manrope', sans-serif" font-size="14" font-weight="700">MACRO HIGH-SPEED SIMULATION</text>
-  <text x="36" y="104" fill="#C2F970" font-family="'JetBrains Mono', monospace" font-size="10">1000 FPS // SHUTTER 1/2000s</text>
+  <text x="36" y="104" fill="#325ea8" font-family="'JetBrains Mono', monospace" font-size="10">1000 FPS // SHUTTER 1/2000s</text>
   <text x="36" y="650" fill="#A5ACA5" font-family="'Inter', sans-serif" font-size="11">Fluid dynamics &amp; crystal water refraction</text>
 </svg>

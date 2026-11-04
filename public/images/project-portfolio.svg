@@ -8,17 +8,17 @@
   <circle cx="96" cy="46" r="6" fill="#3A403A"/>
   <text x="128" y="50" fill="#A5ACA5" font-family="'JetBrains Mono', monospace" font-size="12" letter-spacing="1">athiq-portfolio / app / page.js</text>
   <rect x="680" y="38" width="72" height="18" rx="9" fill="#111311" stroke="#303530"/>
-  <text x="696" y="51" fill="#C2F970" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600">NODE.JS</text>
+  <text x="696" y="51" fill="#325ea8" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600">NODE.JS</text>
 
   <!-- Editorial Layout Preview -->
   <g transform="translate(56, 96)">
     <!-- Brand Tag -->
     <rect x="0" y="0" width="130" height="22" rx="4" fill="#111311" stroke="#303530"/>
-    <text x="12" y="15" fill="#C2F970" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600">PORTFOLIO v1.0</text>
+    <text x="12" y="15" fill="#325ea8" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600">PORTFOLIO v1.0</text>
     
     <!-- Headline -->
     <text x="0" y="56" fill="#F4F3ED" font-family="'Manrope', sans-serif" font-size="28" font-weight="700">I turn ideas into</text>
-    <text x="0" y="92" fill="#C2F970" font-family="'Manrope', sans-serif" font-size="28" font-weight="700">digital experiences.</text>
+    <text x="0" y="92" fill="#325ea8" font-family="'Manrope', sans-serif" font-size="28" font-weight="700">digital experiences.</text>
     <text x="0" y="126" fill="#A5ACA5" font-family="'Inter', sans-serif" font-size="13">B.E. AIML Student · Full-Stack Web Development · Creative Media</text>
 
     <!-- Cards Preview Grid -->
@@ -27,15 +27,15 @@
     <rect x="20" y="206" width="280" height="8" rx="4" fill="#202420"/>
     <rect x="20" y="222" width="220" height="8" rx="4" fill="#202420"/>
     <rect x="20" y="238" width="160" height="8" rx="4" fill="#202420"/>
-    <rect x="20" y="268" width="90" height="26" rx="4" fill="#C2F970"/>
+    <rect x="20" y="268" width="90" height="26" rx="4" fill="#325ea8"/>
     <text x="36" y="285" fill="#111311" font-family="'Inter', sans-serif" font-size="11" font-weight="600">Explore</text>
 
     <!-- Technical Specs Box -->
     <rect x="344" y="156" width="344" height="160" rx="8" fill="#111311" stroke="#303530"/>
-    <text x="364" y="188" fill="#C2F970" font-family="'JetBrains Mono', monospace" font-size="12">ENGINEERING SPECS</text>
+    <text x="364" y="188" fill="#325ea8" font-family="'JetBrains Mono', monospace" font-size="12">ENGINEERING SPECS</text>
     <text x="364" y="214" fill="#A5ACA5" font-family="'JetBrains Mono', monospace" font-size="11">// Design Tokens</text>
     <text x="364" y="234" fill="#F4F3ED" font-family="'JetBrains Mono', monospace" font-size="11">bg-main: <tspan fill="#A5ACA5">#111311</tspan></text>
-    <text x="364" y="254" fill="#F4F3ED" font-family="'JetBrains Mono', monospace" font-size="11">accent:  <tspan fill="#C2F970">#C2F970</tspan></text>
+    <text x="364" y="254" fill="#F4F3ED" font-family="'JetBrains Mono', monospace" font-size="11">accent:  <tspan fill="#325ea8">#325ea8</tspan></text>
     <text x="364" y="274" fill="#F4F3ED" font-family="'JetBrains Mono', monospace" font-size="11">fonts:   <tspan fill="#A5ACA5">Manrope + Inter + Mono</tspan></text>
     <text x="364" y="294" fill="#A5ACA5" font-family="'JetBrains Mono', monospace" font-size="10">✓ Server Components &amp; Accessible</text>
   </g>

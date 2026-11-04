@@ -1,17 +1,12 @@
 "use client";
 
 import Image from "next/image";
-import { ArrowUpRight, ExternalLink, Layers, User, Calendar } from "lucide-react";
+import { ArrowUpRight, ExternalLink, User, Calendar } from "lucide-react";
 import { GithubIcon } from "./Icons";
 
 export default function ProjectCard({ project, onOpenDetails }) {
-  const isLive = project.badgeType === "live";
-  const isInProgress = project.badgeType === "in-progress";
-  const isExperiment = project.badgeType === "experiment";
-  const isProposed = project.badgeType === "proposed";
-
   return (
-    <article className="group bg-[#202420] border border-[#303530] rounded-xl overflow-hidden flex flex-col justify-between transition-all duration-300 hover:border-[#444B44] hover:shadow-xl hover:shadow-black/50">
+    <article className="w-full group bg-[#202420] border border-[#303530] rounded-xl overflow-hidden flex flex-col justify-between transition-all duration-300 hover:border-[#444B44] hover:shadow-xl hover:shadow-black/50">
       {/* Top: Card Media / Visual */}
       <div className="relative aspect-[16/10] w-full overflow-hidden bg-[#111311] border-b border-[#303530]">
         <Image
@@ -32,24 +27,6 @@ export default function ProjectCard({ project, onOpenDetails }) {
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
 
-        {/* Status Badge overlay */}
-        <div className="absolute top-3 left-3 z-10">
-          <span
-            className={`status-pill ${
-              isLive
-                ? "live"
-                : isInProgress
-                ? "in-progress"
-                : isExperiment
-                ? "experiment"
-                : "proposed"
-            }`}
-          >
-            <span className="pulse-dot" />
-            <span>{project.status}</span>
-          </span>
-        </div>
-
         {/* Category Pill */}
         <div className="absolute top-3 right-3 z-10 bg-[#111311]/80 backdrop-blur-sm border border-[#303530] px-2.5 py-1 rounded-md text-[10px] font-mono text-[#A5ACA5]">
           {project.category}
@@ -60,14 +37,14 @@ export default function ProjectCard({ project, onOpenDetails }) {
       <div className="p-6 flex-1 flex flex-col justify-between">
         <div>
           <div className="flex items-center gap-2 text-xs font-mono text-[#6E756E] mb-2">
-            <Calendar className="w-3.5 h-3.5 text-[#C2F970]" />
+            <Calendar className="w-3.5 h-3.5 text-[#325ea8]" />
             <span>{project.date}</span>
             <span>•</span>
-            <User className="w-3.5 h-3.5 text-[#C2F970]" />
+            <User className="w-3.5 h-3.5 text-[#325ea8]" />
             <span className="truncate">{project.role}</span>
           </div>
 
-          <h3 className="font-heading text-xl font-bold text-[#F4F3ED] group-hover:text-[#C2F970] transition-colors mb-2.5">
+          <h3 className="font-heading text-xl font-bold text-[#F4F3ED] group-hover:text-[#325ea8] transition-colors mb-2.5">
             {project.title}
           </h3>
 
@@ -94,10 +71,10 @@ export default function ProjectCard({ project, onOpenDetails }) {
             <button
               type="button"
               onClick={() => onOpenDetails(project)}
-              className="text-xs font-heading font-bold text-[#F4F3ED] hover:text-[#C2F970] flex items-center gap-1.5 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#C2F970]"
+              className="text-xs font-heading font-bold text-[#F4F3ED] hover:text-[#325ea8] flex items-center gap-1.5 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#325ea8]"
             >
               <span>Project Details</span>
-              <ArrowUpRight className="w-3.5 h-3.5 text-[#C2F970]" />
+              <ArrowUpRight className="w-3.5 h-3.5 text-[#325ea8]" />
             </button>
 
             <div className="flex items-center gap-2">
@@ -106,7 +83,7 @@ export default function ProjectCard({ project, onOpenDetails }) {
                   href={project.githubUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-1.5 rounded text-[#A5ACA5] hover:text-[#C2F970] hover:bg-[#1B1E1B] border border-transparent hover:border-[#303530] transition-colors"
+                  className="p-1.5 rounded text-[#A5ACA5] hover:text-[#325ea8] hover:bg-[#1B1E1B] border border-transparent hover:border-[#303530] transition-colors"
                   aria-label={`View ${project.title} GitHub repository`}
                 >
                   <GithubIcon className="w-4 h-4" />
@@ -125,7 +102,7 @@ export default function ProjectCard({ project, onOpenDetails }) {
                   href={project.demoUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-1.5 rounded text-[#A5ACA5] hover:text-[#C2F970] hover:bg-[#1B1E1B] border border-transparent hover:border-[#303530] transition-colors"
+                  className="p-1.5 rounded text-[#A5ACA5] hover:text-[#325ea8] hover:bg-[#1B1E1B] border border-transparent hover:border-[#303530] transition-colors"
                   aria-label={`View ${project.title} live demo`}
                 >
                   <ExternalLink className="w-4 h-4" />

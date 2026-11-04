@@ -14,7 +14,7 @@
   <g transform="translate(56, 88)">
     <rect x="0" y="0" width="216" height="80" rx="8" fill="#111311" stroke="#303530"/>
     <text x="16" y="26" fill="#A5ACA5" font-family="'JetBrains Mono', monospace" font-size="10">DEEP FOCUS TODAY</text>
-    <text x="16" y="58" fill="#C2F970" font-family="'Manrope', sans-serif" font-size="24" font-weight="700">4h 18m</text>
+    <text x="16" y="58" fill="#325ea8" font-family="'Manrope', sans-serif" font-size="24" font-weight="700">4h 18m</text>
     <text x="120" y="56" fill="#A5ACA5" font-family="'Inter', sans-serif" font-size="11">+32% goal</text>
 
     <rect x="236" y="0" width="216" height="80" rx="8" fill="#111311" stroke="#303530"/>
@@ -41,11 +41,11 @@
 
     <!-- Bar sets: 9am, 11am, 1pm, 3pm, 5pm, 7pm, 9pm -->
     <!-- 9am -->
-    <rect x="60" y="110" width="24" height="80" rx="3" fill="#C2F970"/>
+    <rect x="60" y="110" width="24" height="80" rx="3" fill="#325ea8"/>
     <text x="60" y="208" fill="#6E756E" font-family="'JetBrains Mono', monospace" font-size="10">09:00</text>
 
     <!-- 11am -->
-    <rect x="150" y="80" width="24" height="110" rx="3" fill="#C2F970"/>
+    <rect x="150" y="80" width="24" height="110" rx="3" fill="#325ea8"/>
     <text x="150" y="208" fill="#6E756E" font-family="'JetBrains Mono', monospace" font-size="10">11:00</text>
 
     <!-- 1pm -->
@@ -53,7 +53,7 @@
     <text x="240" y="208" fill="#6E756E" font-family="'JetBrains Mono', monospace" font-size="10">13:00</text>
 
     <!-- 3pm -->
-    <rect x="330" y="90" width="24" height="100" rx="3" fill="#C2F970"/>
+    <rect x="330" y="90" width="24" height="100" rx="3" fill="#325ea8"/>
     <text x="330" y="208" fill="#6E756E" font-family="'JetBrains Mono', monospace" font-size="10">15:00</text>
 
     <!-- 5pm -->
@@ -61,7 +61,7 @@
     <text x="420" y="208" fill="#6E756E" font-family="'JetBrains Mono', monospace" font-size="10">17:00</text>
 
     <!-- 7pm -->
-    <rect x="510" y="130" width="24" height="60" rx="3" fill="#C2F970"/>
+    <rect x="510" y="130" width="24" height="60" rx="3" fill="#325ea8"/>
     <text x="510" y="208" fill="#6E756E" font-family="'JetBrains Mono', monospace" font-size="10">19:00</text>
 
     <!-- 9pm -->

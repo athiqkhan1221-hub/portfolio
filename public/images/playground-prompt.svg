@@ -5,13 +5,13 @@
   <text x="36" y="48" fill="#9E70F9" font-family="'JetBrains Mono', monospace" font-size="11">SYSTEM PROMPT FRAMEWORK // 4:3 BENCHMARK</text>
   <!-- Schema block -->
   <rect x="36" y="70" width="528" height="200" rx="6" fill="#111311" stroke="#303530"/>
-  <text x="56" y="100" fill="#C2F970" font-family="'JetBrains Mono', monospace" font-size="11">[INPUT DELIMITERS]</text>
+  <text x="56" y="100" fill="#325ea8" font-family="'JetBrains Mono', monospace" font-size="11">[INPUT DELIMITERS]</text>
   <text x="56" y="124" fill="#A5ACA5" font-family="'JetBrains Mono', monospace" font-size="11">&lt;task&gt;Extract key entities and relationships&lt;/task&gt;</text>
   <text x="56" y="148" fill="#A5ACA5" font-family="'JetBrains Mono', monospace" font-size="11">&lt;constraints&gt;Strict JSON only. No prose introduction.&lt;/constraints&gt;</text>
   <text x="56" y="172" fill="#A5ACA5" font-family="'JetBrains Mono', monospace" font-size="11">&lt;context&gt;Technical documentation excerpts&lt;/context&gt;</text>
   <text x="56" y="200" fill="#9E70F9" font-family="'JetBrains Mono', monospace" font-size="11">[EVALUATION OUTCOME]</text>
   <text x="56" y="224" fill="#F4F3ED" font-family="'JetBrains Mono', monospace" font-size="11">✓ Structural Drift: 0%  |  Hallucination Rate: &lt; 2%</text>
-  <text x="56" y="248" fill="#C2F970" font-family="'JetBrains Mono', monospace" font-size="11">✓ Validated across GPT-4o, Claude 3.5 Sonnet &amp; Gemini 1.5 Pro</text>
+  <text x="56" y="248" fill="#325ea8" font-family="'JetBrains Mono', monospace" font-size="11">✓ Validated across GPT-4o, Claude 3.5 Sonnet &amp; Gemini 1.5 Pro</text>
   
   <!-- Stats pills -->
   <g transform="translate(36, 290)">
@@ -21,7 +21,7 @@
 
     <rect x="180" y="0" width="160" height="50" rx="4" fill="#202420" stroke="#303530"/>
     <text x="196" y="22" fill="#6E756E" font-family="'JetBrains Mono', monospace" font-size="9">OUTPUT CONSISTENCY</text>
-    <text x="196" y="40" fill="#C2F970" font-family="'Manrope', sans-serif" font-size="16" font-weight="700">98.4%</text>
+    <text x="196" y="40" fill="#325ea8" font-family="'Manrope', sans-serif" font-size="16" font-weight="700">98.4%</text>
 
     <rect x="360" y="0" width="168" height="50" rx="4" fill="#202420" stroke="#303530"/>
     <text x="376" y="22" fill="#6E756E" font-family="'JetBrains Mono', monospace" font-size="9">TOKEN REDUCTION</text>

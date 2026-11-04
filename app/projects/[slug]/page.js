@@ -50,7 +50,7 @@ export default async function ProjectDetailPage({ params }) {
         {/* Back navigation */}
         <Link
           href="/#work"
-          className="inline-flex items-center gap-2 font-mono text-xs text-[#A5ACA5] hover:text-[#C2F970] mb-8 transition-colors"
+          className="inline-flex items-center gap-2 font-mono text-xs text-[#A5ACA5] hover:text-[#325ea8] mb-8 transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
           <span>Back to all projects</span>
@@ -59,7 +59,7 @@ export default async function ProjectDetailPage({ params }) {
         {/* Header Metadata */}
         <div className="space-y-4 mb-8">
           <div className="flex flex-wrap items-center gap-3">
-            <span className="font-mono text-xs text-[#C2F970] uppercase tracking-wider">
+            <span className="font-mono text-xs text-[#325ea8] uppercase tracking-wider">
               {project.category}
             </span>
             <span className="text-[#303530]">•</span>
@@ -74,11 +74,11 @@ export default async function ProjectDetailPage({ params }) {
 
           <div className="flex flex-wrap items-center gap-6 text-xs font-mono text-[#A5ACA5] pt-2 border-b border-[#303530] pb-6">
             <div className="flex items-center gap-1.5">
-              <Calendar className="w-3.5 h-3.5 text-[#C2F970]" />
+              <Calendar className="w-3.5 h-3.5 text-[#325ea8]" />
               <span>{project.date}</span>
             </div>
             <div className="flex items-center gap-1.5">
-              <User className="w-3.5 h-3.5 text-[#C2F970]" />
+              <User className="w-3.5 h-3.5 text-[#325ea8]" />
               <span>{project.role}</span>
             </div>
           </div>
@@ -116,7 +116,7 @@ export default async function ProjectDetailPage({ params }) {
               {project.technologies.map((t) => (
                 <span
                   key={t}
-                  className="font-mono text-xs px-3 py-1.5 rounded-md bg-[#202420] border border-[#303530] text-[#C2F970]"
+                  className="font-mono text-xs px-3 py-1.5 rounded-md bg-[#202420] border border-[#303530] text-[#325ea8]"
                 >
                   {t}
                 </span>
@@ -135,7 +135,7 @@ export default async function ProjectDetailPage({ params }) {
           {/* Problem & Motivation */}
           <div className="bg-[#1B1E1B] border border-[#303530] rounded-xl p-6 sm:p-8">
             <div className="flex items-center gap-2.5 mb-3 text-[#F4F3ED] font-heading font-bold text-xl">
-              <Lightbulb className="w-5 h-5 text-[#C2F970]" />
+              <Lightbulb className="w-5 h-5 text-[#325ea8]" />
               <h3>Problem &amp; Motivation</h3>
             </div>
             <p>{project.problem}</p>
@@ -144,7 +144,7 @@ export default async function ProjectDetailPage({ params }) {
           {/* Implemented Solution */}
           <div className="bg-[#1B1E1B] border border-[#303530] rounded-xl p-6 sm:p-8">
             <div className="flex items-center gap-2.5 mb-3 text-[#F4F3ED] font-heading font-bold text-xl">
-              <CheckCircle2 className="w-5 h-5 text-[#C2F970]" />
+              <CheckCircle2 className="w-5 h-5 text-[#325ea8]" />
               <h3>Solution &amp; Implementation</h3>
             </div>
             <p>{project.solution}</p>
@@ -154,13 +154,13 @@ export default async function ProjectDetailPage({ params }) {
           {project.process && (
             <div className="bg-[#1B1E1B] border border-[#303530] rounded-xl p-6 sm:p-8">
               <div className="flex items-center gap-2.5 mb-5 text-[#F4F3ED] font-heading font-bold text-xl">
-                <Workflow className="w-5 h-5 text-[#C2F970]" />
+                <Workflow className="w-5 h-5 text-[#325ea8]" />
                 <h3>Development Process</h3>
               </div>
               <ul className="space-y-4">
                 {project.process.map((step, idx) => (
                   <li key={idx} className="flex items-start gap-3">
-                    <span className="font-mono text-xs font-bold text-[#C2F970] mt-0.5 bg-[#111311] px-2 py-0.5 rounded border border-[#303530]">
+                    <span className="font-mono text-xs font-bold text-[#325ea8] mt-0.5 bg-[#111311] px-2 py-0.5 rounded border border-[#303530]">
                       0{idx + 1}
                     </span>
                     <span>{step}</span>
@@ -182,7 +182,7 @@ export default async function ProjectDetailPage({ params }) {
 
             <div className="p-6 rounded-xl bg-[#1B1E1B] border border-[#303530]">
               <div className="flex items-center gap-2 mb-2 text-[#F4F3ED] font-heading font-bold text-base">
-                <Lightbulb className="w-4 h-4 text-[#C2F970]" />
+                <Lightbulb className="w-4 h-4 text-[#325ea8]" />
                 <h4>Lessons Learned</h4>
               </div>
               <p className="text-sm leading-relaxed">{project.lessonsLearned}</p>
@@ -241,7 +241,7 @@ export default async function ProjectDetailPage({ params }) {
               <span className="font-mono text-[10px] text-[#6E756E] uppercase mb-1">
                 ← Previous Project
               </span>
-              <span className="font-heading font-semibold text-sm text-[#F4F3ED] hover:text-[#C2F970] truncate">
+              <span className="font-heading font-semibold text-sm text-[#F4F3ED] hover:text-[#325ea8] truncate">
                 {prevProject.title}
               </span>
             </Link>
@@ -257,7 +257,7 @@ export default async function ProjectDetailPage({ params }) {
               <span className="font-mono text-[10px] text-[#6E756E] uppercase mb-1">
                 Next Project →
               </span>
-              <span className="font-heading font-semibold text-sm text-[#F4F3ED] hover:text-[#C2F970] truncate">
+              <span className="font-heading font-semibold text-sm text-[#F4F3ED] hover:text-[#325ea8] truncate">
                 {nextProject.title}
               </span>
             </Link>

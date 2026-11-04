@@ -16,11 +16,11 @@
   --text-secondary: #A5ACA5;
   --text-muted: #6E756E;
 
-  --accent: #C2F970;
-  --accent-hover: #D5FFA0;
-  --accent-muted: rgba(194, 249, 112, 0.28);
-  --accent-glow: rgba(194, 249, 112, 0.28);
-  --accent-border: rgba(194, 249, 112, 0.35);
+  --accent: #325ea8;
+  --accent-hover: #264b8a;
+  --accent-muted: rgba(50, 94, 168, 0.28);
+  --accent-glow: rgba(50, 94, 168, 0.28);
+  --accent-border: rgba(50, 94, 168, 0.35);
 
   --border: #303530;
   --border-subtle: #242924;
@@ -208,13 +208,13 @@ a {
   border: 1px solid var(--accent);
   cursor: pointer;
   transition: all var(--transition-fast);
-  box-shadow: 0 0 20px rgba(194, 249, 112, 0.15);
+  box-shadow: 0 0 20px rgba(50, 94, 168, 0.25);
 }
 
 .btn-primary:hover {
   background-color: var(--accent-hover);
   transform: translateY(-2px);
-  box-shadow: 0 4px 25px rgba(194, 249, 112, 0.3);
+  box-shadow: 0 4px 25px rgba(50, 94, 168, 0.4);
 }
 
 .btn-secondary {
@@ -277,9 +277,9 @@ a {
 }
 
 .status-pill.live {
-  background: rgba(194, 249, 112, 0.12);
+  background: rgba(50, 94, 168, 0.12);
   color: var(--accent);
-  border: 1px solid rgba(194, 249, 112, 0.3);
+  border: 1px solid rgba(50, 94, 168, 0.3);
 }
 
 .status-pill.in-progress {

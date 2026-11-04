@@ -46,7 +46,7 @@ export default function ProjectModal({ project, onClose }) {
         {/* Modal Header */}
         <div className="sticky top-0 z-20 bg-[#1B1E1B]/95 backdrop-blur-md px-6 py-4 border-b border-[#303530] flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <span className="font-mono text-xs text-[#C2F970] uppercase tracking-wider">
+            <span className="font-mono text-xs text-[#325ea8] uppercase tracking-wider">
               {project.category}
             </span>
             <span className="text-[#303530]">•</span>
@@ -56,7 +56,7 @@ export default function ProjectModal({ project, onClose }) {
           <button
             type="button"
             onClick={onClose}
-            className="p-1.5 rounded-lg text-[#A5ACA5] hover:text-[#F4F3ED] hover:bg-[#202420] border border-transparent hover:border-[#303530] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#C2F970]"
+            className="p-1.5 rounded-lg text-[#A5ACA5] hover:text-[#F4F3ED] hover:bg-[#202420] border border-transparent hover:border-[#303530] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#325ea8]"
             aria-label="Close dialog"
           >
             <X className="w-5 h-5" />
@@ -69,12 +69,12 @@ export default function ProjectModal({ project, onClose }) {
           <div>
             <div className="flex flex-wrap items-center gap-4 text-xs font-mono text-[#A5ACA5] mb-2">
               <span className="flex items-center gap-1.5">
-                <Calendar className="w-3.5 h-3.5 text-[#C2F970]" />
+                <Calendar className="w-3.5 h-3.5 text-[#325ea8]" />
                 {project.date}
               </span>
               <span className="text-[#303530]">|</span>
               <span className="flex items-center gap-1.5">
-                <User className="w-3.5 h-3.5 text-[#C2F970]" />
+                <User className="w-3.5 h-3.5 text-[#325ea8]" />
                 {project.role}
               </span>
             </div>
@@ -121,7 +121,7 @@ export default function ProjectModal({ project, onClose }) {
               {project.technologies.map((t) => (
                 <span
                   key={t}
-                  className="font-mono text-xs px-3 py-1.5 rounded-md bg-[#202420] border border-[#303530] text-[#C2F970]"
+                  className="font-mono text-xs px-3 py-1.5 rounded-md bg-[#202420] border border-[#303530] text-[#325ea8]"
                 >
                   {t}
                 </span>
@@ -132,7 +132,7 @@ export default function ProjectModal({ project, onClose }) {
           {/* Problem & Motivation */}
           <div className="bg-[#202420] border border-[#303530] rounded-xl p-6">
             <div className="flex items-center gap-2 mb-2 text-[#F4F3ED] font-heading font-bold text-lg">
-              <Lightbulb className="w-5 h-5 text-[#C2F970]" />
+              <Lightbulb className="w-5 h-5 text-[#325ea8]" />
               <h3>Problem &amp; Motivation</h3>
             </div>
             <p className="font-body text-sm sm:text-base text-[#A5ACA5] leading-relaxed">
@@ -143,7 +143,7 @@ export default function ProjectModal({ project, onClose }) {
           {/* Proposed / Implemented Solution */}
           <div className="bg-[#202420] border border-[#303530] rounded-xl p-6">
             <div className="flex items-center gap-2 mb-2 text-[#F4F3ED] font-heading font-bold text-lg">
-              <CheckCircle2 className="w-5 h-5 text-[#C2F970]" />
+              <CheckCircle2 className="w-5 h-5 text-[#325ea8]" />
               <h3>Proposed Solution &amp; Architecture</h3>
             </div>
             <p className="font-body text-sm sm:text-base text-[#A5ACA5] leading-relaxed">
@@ -155,13 +155,13 @@ export default function ProjectModal({ project, onClose }) {
           {project.process && project.process.length > 0 && (
             <div className="bg-[#202420] border border-[#303530] rounded-xl p-6">
               <div className="flex items-center gap-2 mb-4 text-[#F4F3ED] font-heading font-bold text-lg">
-                <Workflow className="w-5 h-5 text-[#C2F970]" />
+                <Workflow className="w-5 h-5 text-[#325ea8]" />
                 <h3>Development Process</h3>
               </div>
               <ul className="space-y-3 font-body text-sm text-[#A5ACA5]">
                 {project.process.map((step, idx) => (
                   <li key={idx} className="flex items-start gap-3">
-                    <span className="font-mono text-xs font-bold text-[#C2F970] mt-0.5 bg-[#111311] px-1.5 py-0.5 rounded border border-[#303530]">
+                    <span className="font-mono text-xs font-bold text-[#325ea8] mt-0.5 bg-[#111311] px-1.5 py-0.5 rounded border border-[#303530]">
                       0{idx + 1}
                     </span>
                     <span className="leading-relaxed">{step}</span>
@@ -183,7 +183,7 @@ export default function ProjectModal({ project, onClose }) {
                     key={idx}
                     className="p-3.5 rounded-lg bg-[#111311] border border-[#303530] text-xs font-body text-[#F4F3ED] flex items-center gap-2.5"
                   >
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#C2F970] shrink-0" />
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#325ea8] shrink-0" />
                     <span>{feature}</span>
                   </div>
                 ))}
@@ -205,7 +205,7 @@ export default function ProjectModal({ project, onClose }) {
 
             <div className="p-5 rounded-xl bg-[#111311] border border-[#303530]">
               <div className="flex items-center gap-2 mb-2 text-sm font-heading font-bold text-[#F4F3ED]">
-                <Lightbulb className="w-4 h-4 text-[#C2F970]" />
+                <Lightbulb className="w-4 h-4 text-[#325ea8]" />
                 <h4>Lessons Learned</h4>
               </div>
               <p className="font-body text-xs sm:text-sm text-[#A5ACA5] leading-relaxed">
@@ -253,7 +253,7 @@ export default function ProjectModal({ project, onClose }) {
 
           <Link
             href={`/projects/${project.slug}`}
-            className="text-xs font-mono text-[#C2F970] hover:underline flex items-center gap-1.5"
+            className="text-xs font-mono text-[#325ea8] hover:underline flex items-center gap-1.5"
             onClick={onClose}
           >
             <span>Dedicated Page View</span>

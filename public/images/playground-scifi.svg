@@ -3,17 +3,17 @@
   <rect x="12" y="12" width="616" height="336" rx="8" fill="#1B1E1B" stroke="#303530"/>
   <!-- Horizon & Sun / Atmospheric Mist -->
   <path d="M 12 240 Q 200 210 320 230 T 628 220 L 628 348 L 12 348 Z" fill="#151715"/>
-  <circle cx="320" cy="180" r="70" fill="#C2F970" opacity="0.12"/>
-  <circle cx="320" cy="180" r="30" fill="#C2F970" opacity="0.25"/>
+  <circle cx="320" cy="180" r="70" fill="#325ea8" opacity="0.12"/>
+  <circle cx="320" cy="180" r="30" fill="#325ea8" opacity="0.25"/>
   <!-- Film letterbox guides -->
   <line x1="12" y1="52" x2="628" y2="52" stroke="#303530" stroke-dasharray="4 4"/>
   <line x1="12" y1="308" x2="628" y2="308" stroke="#303530" stroke-dasharray="4 4"/>
   <!-- Viewfinder reticle -->
-  <path d="M 40 70 L 40 60 L 50 60" stroke="#C2F970" stroke-width="1.5"/>
-  <path d="M 600 70 L 600 60 L 590 60" stroke="#C2F970" stroke-width="1.5"/>
-  <path d="M 40 290 L 40 300 L 50 300" stroke="#C2F970" stroke-width="1.5"/>
-  <path d="M 600 290 L 600 300 L 590 300" stroke="#C2F970" stroke-width="1.5"/>
+  <path d="M 40 70 L 40 60 L 50 60" stroke="#325ea8" stroke-width="1.5"/>
+  <path d="M 600 70 L 600 60 L 590 60" stroke="#325ea8" stroke-width="1.5"/>
+  <path d="M 40 290 L 40 300 L 50 300" stroke="#325ea8" stroke-width="1.5"/>
+  <path d="M 600 290 L 600 300 L 590 300" stroke="#325ea8" stroke-width="1.5"/>
   <!-- Metadata -->
-  <text x="56" y="80" fill="#C2F970" font-family="'JetBrains Mono', monospace" font-size="10">16:9 ANAMORPHIC // 2.39:1 MASK</text>
+  <text x="56" y="80" fill="#325ea8" font-family="'JetBrains Mono', monospace" font-size="10">16:9 ANAMORPHIC // 2.39:1 MASK</text>
   <text x="56" y="292" fill="#A5ACA5" font-family="'JetBrains Mono', monospace" font-size="10">AI VIDEO STUDY · ATMOSPHERIC DUSK</text>
 </svg>

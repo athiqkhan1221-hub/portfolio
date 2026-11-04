@@ -46,7 +46,7 @@ export default function PlaygroundModal({ item, onClose }) {
         {/* Header */}
         <div className="sticky top-0 z-20 bg-[#1B1E1B]/95 backdrop-blur-md px-6 py-4 border-b border-[#303530] flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <span className="font-mono text-xs text-[#C2F970] uppercase tracking-wider">
+            <span className="font-mono text-xs text-[#325ea8] uppercase tracking-wider">
               {item.category}
             </span>
             <span className="text-[#303530]">•</span>
@@ -56,7 +56,7 @@ export default function PlaygroundModal({ item, onClose }) {
           <button
             type="button"
             onClick={onClose}
-            className="p-1.5 rounded-lg text-[#A5ACA5] hover:text-[#F4F3ED] hover:bg-[#202420] border border-transparent hover:border-[#303530] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#C2F970]"
+            className="p-1.5 rounded-lg text-[#A5ACA5] hover:text-[#F4F3ED] hover:bg-[#202420] border border-transparent hover:border-[#303530] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#325ea8]"
             aria-label="Close dialog"
           >
             <X className="w-5 h-5" />
@@ -105,7 +105,7 @@ export default function PlaygroundModal({ item, onClose }) {
 
                 {/* Subtle Play Overlay Mockup */}
                 <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/40 p-4 text-center">
-                  <div className="w-12 h-12 rounded-full bg-[#111311]/80 border border-[#C2F970] flex items-center justify-center text-[#C2F970] mb-3">
+                  <div className="w-12 h-12 rounded-full bg-[#111311]/80 border border-[#325ea8] flex items-center justify-center text-[#325ea8] mb-3">
                     <Film className="w-5 h-5" />
                   </div>
                   <p className="font-mono text-xs text-[#F4F3ED] font-semibold">
@@ -123,7 +123,7 @@ export default function PlaygroundModal({ item, onClose }) {
           {item.promptSnippet && (
             <div className="bg-[#111311] border border-[#303530] rounded-xl p-5">
               <div className="flex items-center justify-between gap-4 mb-2">
-                <div className="flex items-center gap-2 text-xs font-mono text-[#C2F970]">
+                <div className="flex items-center gap-2 text-xs font-mono text-[#325ea8]">
                   <Sparkles className="w-3.5 h-3.5" />
                   <span>Prompt / Pipeline Architecture</span>
                 </div>
@@ -135,7 +135,7 @@ export default function PlaygroundModal({ item, onClose }) {
                 >
                   {copied ? (
                     <>
-                      <Check className="w-3 h-3 text-[#C2F970]" />
+                      <Check className="w-3 h-3 text-[#325ea8]" />
                       <span>Copied</span>
                     </>
                   ) : (
@@ -157,14 +157,14 @@ export default function PlaygroundModal({ item, onClose }) {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="p-4 rounded-xl bg-[#202420] border border-[#303530]">
               <div className="flex items-center gap-2 mb-2 text-xs font-mono text-[#A5ACA5]">
-                <Sliders className="w-3.5 h-3.5 text-[#C2F970]" />
+                <Sliders className="w-3.5 h-3.5 text-[#325ea8]" />
                 <span>Tools &amp; Categories</span>
               </div>
               <div className="flex flex-wrap gap-1.5">
                 {item.tools?.map((t) => (
                   <span
                     key={t}
-                    className="font-mono text-xs px-2.5 py-1 rounded bg-[#111311] border border-[#303530] text-[#C2F970]"
+                    className="font-mono text-xs px-2.5 py-1 rounded bg-[#111311] border border-[#303530] text-[#325ea8]"
                   >
                     {t}
                   </span>

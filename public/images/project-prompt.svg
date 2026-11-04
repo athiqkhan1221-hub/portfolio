@@ -30,13 +30,13 @@
     <text x="26" y="254" fill="#F9709E" font-family="'JetBrains Mono', monospace" font-size="10">Adherence Score: 52%</text>
 
     <!-- Column 2: Structured Persona + Delimiters -->
-    <rect x="358" y="0" width="330" height="336" rx="8" fill="#111311" stroke="#C2F970" stroke-width="1.2"/>
+    <rect x="358" y="0" width="330" height="336" rx="8" fill="#111311" stroke="#325ea8" stroke-width="1.2"/>
     <rect x="358" y="0" width="330" height="36" rx="8" fill="#202420"/>
-    <text x="374" y="24" fill="#C2F970" font-family="'JetBrains Mono', monospace" font-size="11">METHOD B: DELIMITED FEW-SHOT</text>
+    <text x="374" y="24" fill="#325ea8" font-family="'JetBrains Mono', monospace" font-size="11">METHOD B: DELIMITED FEW-SHOT</text>
 
     <text x="374" y="60" fill="#A5ACA5" font-family="'JetBrains Mono', monospace" font-size="10">SYSTEM + DELIMITER SPEC:</text>
     <rect x="374" y="70" width="298" height="60" rx="4" fill="#1B1E1B"/>
-    <text x="384" y="90" fill="#C2F970" font-family="'JetBrains Mono', monospace" font-size="10">&lt;role&gt;Senior Code Auditor&lt;/role&gt;</text>
+    <text x="384" y="90" fill="#325ea8" font-family="'JetBrains Mono', monospace" font-size="10">&lt;role&gt;Senior Code Auditor&lt;/role&gt;</text>
     <text x="384" y="106" fill="#A5ACA5" font-family="'JetBrains Mono', monospace" font-size="10">&lt;rules&gt;Only report syntax errors with line #&lt;/rules&gt;</text>
     <text x="384" y="122" fill="#A5ACA5" font-family="'JetBrains Mono', monospace" font-size="10">&lt;output_format&gt;Strict JSON schema&lt;/output_format&gt;</text>
 
@@ -45,6 +45,6 @@
     <text x="384" y="188" fill="#F4F3ED" font-family="'Inter', sans-serif" font-size="11">✓ Zero markdown leakage outside JSON</text>
     <text x="384" y="210" fill="#F4F3ED" font-family="'Inter', sans-serif" font-size="11">✓ 100% reproducible field schema</text>
     <text x="384" y="232" fill="#F4F3ED" font-family="'Inter', sans-serif" font-size="11">✓ Direct line-item verification</text>
-    <text x="384" y="254" fill="#C2F970" font-family="'JetBrains Mono', monospace" font-size="10">Adherence Score: 98% ★</text>
+    <text x="384" y="254" fill="#325ea8" font-family="'JetBrains Mono', monospace" font-size="10">Adherence Score: 98% ★</text>
   </g>
 </svg>

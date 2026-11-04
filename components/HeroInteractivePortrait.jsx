@@ -275,7 +275,7 @@ export default function HeroInteractivePortrait() {
           <a
             href="#work"
             title="Explore Work"
-            className="absolute -right-3 sm:-right-4 top-1/2 -translate-y-1/2 w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#F4F3ED] text-[#111311] shadow-[0_12px_30px_rgba(0,0,0,0.65)] flex items-center justify-center transition-all duration-300 hover:scale-110 hover:bg-[#C2F970] hover:shadow-[0_0_20px_rgba(194,249,112,0.45)] group z-20 cursor-pointer"
+            className="absolute -right-3 sm:-right-4 top-1/2 -translate-y-1/2 w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#F4F3ED] text-[#111311] shadow-[0_12px_30px_rgba(0,0,0,0.65)] flex items-center justify-center transition-all duration-300 hover:scale-110 hover:bg-[#325ea8] hover:text-white hover:shadow-[0_0_20px_rgba(50,94,168,0.45)] group z-20 cursor-pointer"
             style={{ transform: "translateZ(32px)" }}
           >
             <ArrowUpRight className="w-5 h-5 sm:w-6 sm:h-6 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
