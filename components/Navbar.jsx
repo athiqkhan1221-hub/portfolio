@@ -15,7 +15,7 @@ export default function Navbar() {
       setScrolled(window.scrollY > 24);
 
       // Section spy
-      const sections = ["about", "work", "skills", "playground", "journey", "contact"];
+      const sections = ["about", "work", "skills", "contact"];
       const scrollPosition = window.scrollY + 200;
 
       for (const section of sections) {
@@ -79,13 +79,13 @@ export default function Navbar() {
                 key={item.name}
                 href={item.href}
                 className={`font-body text-sm font-medium transition-colors duration-200 relative py-1 ${isActive
-                  ? "text-[#C2F970]"
+                  ? "text-[#325ea8]"
                   : "text-[#A5ACA5] hover:text-[#F4F3ED]"
                   }`}
               >
                 {item.name}
                 {isActive && (
-                  <span className="absolute -bottom-1 left-0 right-0 h-[2px] bg-[#C2F970] rounded-full" />
+                  <span className="absolute -bottom-1 left-0 right-0 h-[2px] bg-[#325ea8] rounded-full" />
                 )}
               </a>
             );
@@ -107,7 +107,7 @@ export default function Navbar() {
         <button
           type="button"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="md:hidden p-2 rounded-lg text-[#F4F3ED] hover:text-[#C2F970] hover:bg-[#1B1E1B] border border-[#303530] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#C2F970]"
+          className="md:hidden p-2 rounded-lg text-[#F4F3ED] hover:text-[#325ea8] hover:bg-[#1B1E1B] border border-[#303530] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#325ea8]"
           aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
           aria-expanded={mobileMenuOpen}
         >
@@ -124,7 +124,7 @@ export default function Navbar() {
                 key={item.name}
                 href={item.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className="font-heading text-2xl font-bold text-[#F4F3ED] hover:text-[#C2F970] py-2 border-b border-[#202420] flex items-center justify-between"
+                className="font-heading text-2xl font-bold text-[#F4F3ED] hover:text-[#325ea8] py-2 border-b border-[#202420] flex items-center justify-between"
               >
                 <span>{item.name}</span>
                 <span className="font-mono text-xs text-[#6E756E]">→</span>

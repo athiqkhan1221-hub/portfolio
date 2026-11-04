@@ -95,13 +95,13 @@ export default function Contact() {
   return (
     <section id="contact" className="py-24 md:py-32 border-b border-[#303530] relative bg-[#151815]">
       <div className="editorial-container">
-        {/* Section Header */}
-        <div className="mb-14">
+        {/* Section Header (Centered) */}
+        <div className="text-center max-w-2xl mx-auto mb-14">
           <span className="section-label">HAVE SOMETHING IN MIND?</span>
           <h2 className="section-heading">
-            Let&apos;s make something <span className="text-[#C2F970]">useful.</span>
+            Let&apos;s make something <span className="text-[#325ea8]">useful.</span>
           </h2>
-          <p className="section-description">
+          <p className="section-description mx-auto">
             Have a project idea, an internship opportunity, or an interesting problem to
             solve? I&apos;d be happy to connect and explore what we could build.
           </p>
@@ -117,7 +117,7 @@ export default function Contact() {
               </span>
               <a
                 href={`mailto:${contactDetails.email}`}
-                className="font-heading text-lg sm:text-xl font-bold text-[#F4F3ED] hover:text-[#C2F970] transition-colors break-all block mb-4"
+                className="font-heading text-lg sm:text-xl font-bold text-[#F4F3ED] hover:text-[#325ea8] transition-colors break-all block mb-4"
               >
                 {contactDetails.email}
               </a>
@@ -138,7 +138,7 @@ export default function Contact() {
                 >
                   {copiedEmail ? (
                     <>
-                      <Check className="w-3.5 h-3.5 text-[#C2F970]" />
+                      <Check className="w-3.5 h-3.5 text-[#325ea8]" />
                       <span>Copied!</span>
                     </>
                   ) : (
@@ -162,9 +162,9 @@ export default function Contact() {
                   href={contactDetails.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-3 rounded-lg bg-[#111311] border border-[#303530] hover:border-[#C2F970] flex items-center justify-between text-sm transition-colors group"
+                  className="p-3 rounded-lg bg-[#111311] border border-[#303530] hover:border-[#325ea8] flex items-center justify-between text-sm transition-colors group"
                 >
-                  <div className="flex items-center gap-3 text-[#F4F3ED] group-hover:text-[#C2F970]">
+                  <div className="flex items-center gap-3 text-[#F4F3ED] group-hover:text-[#325ea8]">
                     <GithubIcon className="w-4 h-4" />
                     <span className="font-heading font-medium">GitHub</span>
                   </div>
@@ -178,9 +178,9 @@ export default function Contact() {
                   href={contactDetails.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-3 rounded-lg bg-[#111311] border border-[#303530] hover:border-[#C2F970] flex items-center justify-between text-sm transition-colors group"
+                  className="p-3 rounded-lg bg-[#111311] border border-[#303530] hover:border-[#325ea8] flex items-center justify-between text-sm transition-colors group"
                 >
-                  <div className="flex items-center gap-3 text-[#F4F3ED] group-hover:text-[#C2F970]">
+                  <div className="flex items-center gap-3 text-[#F4F3ED] group-hover:text-[#325ea8]">
                     <LinkedinIcon className="w-4 h-4" />
                     <span className="font-heading font-medium">LinkedIn</span>
                   </div>
@@ -194,9 +194,9 @@ export default function Contact() {
                   href={contactDetails.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-3 rounded-lg bg-[#111311] border border-[#303530] hover:border-[#C2F970] flex items-center justify-between text-sm transition-colors group"
+                  className="p-3 rounded-lg bg-[#111311] border border-[#303530] hover:border-[#325ea8] flex items-center justify-between text-sm transition-colors group"
                 >
-                  <div className="flex items-center gap-3 text-[#F4F3ED] group-hover:text-[#C2F970]">
+                  <div className="flex items-center gap-3 text-[#F4F3ED] group-hover:text-[#325ea8]">
                     <InstagramIcon className="w-4 h-4" />
                     <span className="font-heading font-medium">Instagram</span>
                   </div>
@@ -210,9 +210,9 @@ export default function Contact() {
                   href={contactDetails.whatsapp}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-3 rounded-lg bg-[#111311] border border-[#303530] hover:border-[#C2F970] flex items-center justify-between text-sm transition-colors group"
+                  className="p-3 rounded-lg bg-[#111311] border border-[#303530] hover:border-[#325ea8] flex items-center justify-between text-sm transition-colors group"
                 >
-                  <div className="flex items-center gap-3 text-[#F4F3ED] group-hover:text-[#C2F970]">
+                  <div className="flex items-center gap-3 text-[#F4F3ED] group-hover:text-[#325ea8]">
                     <WhatsAppIcon className="w-4 h-4 text-[#25D366]" />
                     <span className="font-heading font-medium">WhatsApp</span>
                   </div>
@@ -226,11 +226,11 @@ export default function Contact() {
             {/* Context & Response Time */}
             <div className="p-4 rounded-xl bg-[#1B1E1B] border border-[#303530] flex flex-col gap-2 text-xs font-mono text-[#A5ACA5]">
               <div className="flex items-center gap-2">
-                <MapPin className="w-4 h-4 text-[#C2F970]" />
+                <MapPin className="w-4 h-4 text-[#325ea8]" />
                 <span>Location: {contactDetails.location} (IST / UTC+5:30)</span>
               </div>
               <div className="flex items-center gap-2">
-                <Clock className="w-4 h-4 text-[#C2F970]" />
+                <Clock className="w-4 h-4 text-[#325ea8]" />
                 <span>Response time: Usually 24 hours</span>
               </div>
             </div>
@@ -241,14 +241,14 @@ export default function Contact() {
             <div className="bg-[#202420] border border-[#303530] rounded-xl p-6 sm:p-8">
               {isSubmitted ? (
                 <div className="py-10 text-center space-y-4 animate-fadeIn">
-                  <div className="w-14 h-14 rounded-full bg-[#111311] border border-[#C2F970] text-[#C2F970] flex items-center justify-center mx-auto">
+                  <div className="w-14 h-14 rounded-full bg-[#111311] border border-[#325ea8] text-[#325ea8] flex items-center justify-center mx-auto">
                     <CheckCircle2 className="w-8 h-8" />
                   </div>
                   <h3 className="font-heading text-2xl font-bold text-[#F4F3ED]">
                     Sent to WhatsApp!
                   </h3>
                   <p className="font-body text-sm text-[#A5ACA5] max-w-md mx-auto leading-relaxed">
-                    Thank you, <strong className="text-[#F4F3ED]">{formData.name}</strong>. WhatsApp has been opened with your pre-filled message for Athiq (<strong className="text-[#C2F970]">{contactDetails.phone}</strong>).
+                    Thank you, <strong className="text-[#F4F3ED]">{formData.name}</strong>. WhatsApp has been opened with your pre-filled message for Athiq (<strong className="text-[#325ea8]">{contactDetails.phone}</strong>).
                   </p>
 
                   <div className="pt-4 flex flex-wrap items-center justify-center gap-3">
@@ -301,7 +301,7 @@ export default function Contact() {
                       htmlFor="contact-name"
                       className="block font-mono text-xs uppercase text-[#A5ACA5] mb-1.5"
                     >
-                      Your Name <span className="text-[#C2F970]">*</span>
+                      Your Name <span className="text-[#325ea8]">*</span>
                     </label>
                     <input
                       id="contact-name"
@@ -311,11 +311,10 @@ export default function Contact() {
                         setFormData({ ...formData, name: e.target.value })
                       }
                       placeholder="e.g. Alex Johnson"
-                      className={`w-full px-4 py-3 rounded-lg bg-[#111311] border text-sm text-[#F4F3ED] placeholder-[#6E756E] focus:outline-none transition-colors ${
-                        errors.name
+                      className={`w-full px-4 py-3 rounded-lg bg-[#111311] border text-sm text-[#F4F3ED] placeholder-[#6E756E] focus:outline-none transition-colors ${errors.name
                           ? "border-red-500 focus:border-red-500"
-                          : "border-[#303530] focus:border-[#C2F970]"
-                      }`}
+                          : "border-[#303530] focus:border-[#325ea8]"
+                        }`}
                     />
                     {errors.name && (
                       <p className="mt-1.5 text-xs text-red-400 flex items-center gap-1 font-mono">
@@ -331,7 +330,7 @@ export default function Contact() {
                       htmlFor="contact-email"
                       className="block font-mono text-xs uppercase text-[#A5ACA5] mb-1.5"
                     >
-                      Email Address <span className="text-[#C2F970]">*</span>
+                      Email Address <span className="text-[#325ea8]">*</span>
                     </label>
                     <input
                       id="contact-email"
@@ -341,11 +340,10 @@ export default function Contact() {
                         setFormData({ ...formData, email: e.target.value })
                       }
                       placeholder="e.g. alex@company.com"
-                      className={`w-full px-4 py-3 rounded-lg bg-[#111311] border text-sm text-[#F4F3ED] placeholder-[#6E756E] focus:outline-none transition-colors ${
-                        errors.email
+                      className={`w-full px-4 py-3 rounded-lg bg-[#111311] border text-sm text-[#F4F3ED] placeholder-[#6E756E] focus:outline-none transition-colors ${errors.email
                           ? "border-red-500 focus:border-red-500"
-                          : "border-[#303530] focus:border-[#C2F970]"
-                      }`}
+                          : "border-[#303530] focus:border-[#325ea8]"
+                        }`}
                     />
                     {errors.email && (
                       <p className="mt-1.5 text-xs text-red-400 flex items-center gap-1 font-mono">
@@ -369,7 +367,7 @@ export default function Contact() {
                       onChange={(e) =>
                         setFormData({ ...formData, purpose: e.target.value })
                       }
-                      className="w-full px-4 py-3 rounded-lg bg-[#111311] border border-[#303530] text-sm text-[#F4F3ED] focus:border-[#C2F970] focus:outline-none transition-colors cursor-pointer"
+                      className="w-full px-4 py-3 rounded-lg bg-[#111311] border border-[#303530] text-sm text-[#F4F3ED] focus:border-[#325ea8] focus:outline-none transition-colors cursor-pointer"
                     >
                       <option value="Internship Opportunity">
                         Internship Opportunity (Web Dev / AIML)
@@ -395,7 +393,7 @@ export default function Contact() {
                       htmlFor="contact-message"
                       className="block font-mono text-xs uppercase text-[#A5ACA5] mb-1.5"
                     >
-                      Message <span className="text-[#C2F970]">*</span>
+                      Message <span className="text-[#325ea8]">*</span>
                     </label>
                     <textarea
                       id="contact-message"
@@ -405,11 +403,10 @@ export default function Contact() {
                         setFormData({ ...formData, message: e.target.value })
                       }
                       placeholder="Tell me a bit about what you have in mind..."
-                      className={`w-full px-4 py-3 rounded-lg bg-[#111311] border text-sm text-[#F4F3ED] placeholder-[#6E756E] focus:outline-none transition-colors resize-none ${
-                        errors.message
+                      className={`w-full px-4 py-3 rounded-lg bg-[#111311] border text-sm text-[#F4F3ED] placeholder-[#6E756E] focus:outline-none transition-colors resize-none ${errors.message
                           ? "border-red-500 focus:border-red-500"
-                          : "border-[#303530] focus:border-[#C2F970]"
-                      }`}
+                          : "border-[#303530] focus:border-[#325ea8]"
+                        }`}
                     />
                     {errors.message && (
                       <p className="mt-1.5 text-xs text-red-400 flex items-center gap-1 font-mono">

@@ -29,9 +29,9 @@ export default function Footer() {
           <div className="space-y-2">
             <Link
               href="/"
-              className="inline-block font-heading font-extrabold text-2xl tracking-tighter text-[#F4F3ED] hover:text-[#C2F970] transition-colors"
+              className="inline-block font-heading font-extrabold text-2xl tracking-tighter text-[#F4F3ED] hover:text-[#325ea8] transition-colors"
             >
-              AK<span className="text-[#C2F970]">.</span>
+              AK<span className="text-[#325ea8]">.</span>
             </Link>
             <p className="font-body text-xs sm:text-sm text-[#A5ACA5] max-w-sm">
               Designed, developed, and continuously improved by Athiq Khan.
@@ -44,7 +44,7 @@ export default function Footer() {
               <a
                 key={item.name}
                 href={item.href}
-                className="font-body text-xs sm:text-sm text-[#A5ACA5] hover:text-[#C2F970] transition-colors"
+                className="font-body text-xs sm:text-sm text-[#A5ACA5] hover:text-[#325ea8] transition-colors"
               >
                 {item.name}
               </a>
@@ -57,7 +57,7 @@ export default function Footer() {
               href={contactDetails.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2.5 rounded-lg bg-[#1B1E1B] border border-[#303530] text-[#A5ACA5] hover:text-[#C2F970] hover:border-[#C2F970] transition-colors"
+              className="p-2.5 rounded-lg bg-[#1B1E1B] border border-[#303530] text-[#A5ACA5] hover:text-[#325ea8] hover:border-[#325ea8] transition-colors"
               aria-label="GitHub"
             >
               <GithubIcon className="w-4 h-4" />
@@ -66,7 +66,7 @@ export default function Footer() {
               href={contactDetails.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2.5 rounded-lg bg-[#1B1E1B] border border-[#303530] text-[#A5ACA5] hover:text-[#C2F970] hover:border-[#C2F970] transition-colors"
+              className="p-2.5 rounded-lg bg-[#1B1E1B] border border-[#303530] text-[#A5ACA5] hover:text-[#325ea8] hover:border-[#325ea8] transition-colors"
               aria-label="LinkedIn"
             >
               <LinkedinIcon className="w-4 h-4" />
@@ -75,7 +75,7 @@ export default function Footer() {
               href={contactDetails.instagram}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2.5 rounded-lg bg-[#1B1E1B] border border-[#303530] text-[#A5ACA5] hover:text-[#C2F970] hover:border-[#C2F970] transition-colors"
+              className="p-2.5 rounded-lg bg-[#1B1E1B] border border-[#303530] text-[#A5ACA5] hover:text-[#325ea8] hover:border-[#325ea8] transition-colors"
               aria-label="Instagram"
             >
               <InstagramIcon className="w-4 h-4" />
@@ -84,14 +84,14 @@ export default function Footer() {
               href={contactDetails.whatsapp}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2.5 rounded-lg bg-[#1B1E1B] border border-[#303530] text-[#A5ACA5] hover:text-[#C2F970] hover:border-[#C2F970] transition-colors"
+              className="p-2.5 rounded-lg bg-[#1B1E1B] border border-[#303530] text-[#A5ACA5] hover:text-[#325ea8] hover:border-[#325ea8] transition-colors"
               aria-label="WhatsApp"
             >
               <WhatsAppIcon className="w-4 h-4 text-[#25D366]" />
             </a>
             <a
               href={`mailto:${contactDetails.email}`}
-              className="p-2.5 rounded-lg bg-[#1B1E1B] border border-[#303530] text-[#A5ACA5] hover:text-[#C2F970] hover:border-[#C2F970] transition-colors"
+              className="p-2.5 rounded-lg bg-[#1B1E1B] border border-[#303530] text-[#A5ACA5] hover:text-[#325ea8] hover:border-[#325ea8] transition-colors"
               aria-label="Email"
             >
               <Mail className="w-4 h-4" />
@@ -100,7 +100,7 @@ export default function Footer() {
             <button
               type="button"
               onClick={scrollToTop}
-              className="p-2.5 rounded-lg bg-[#202420] border border-[#303530] text-[#F4F3ED] hover:text-[#111311] hover:bg-[#C2F970] hover:border-[#C2F970] transition-all ml-2"
+              className="p-2.5 rounded-lg bg-[#202420] border border-[#303530] text-[#F4F3ED] hover:text-white hover:bg-[#325ea8] hover:border-[#325ea8] transition-all ml-2"
               aria-label="Scroll to top of page"
               title="Back to top"
             >
@@ -117,7 +117,7 @@ export default function Footer() {
             <span>•</span>
             <span>B.E. AIML</span>
             <span>•</span>
-            <span className="text-[#C2F970]">v1.0.0</span>
+            <span className="text-[#325ea8]">v1.0.0</span>
           </div>
         </div>
       </div>

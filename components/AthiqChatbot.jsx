@@ -38,13 +38,13 @@ function CuteRobotFigure({ mood = "happy", size = 48, isHovered = false }) {
       >
         <defs>
           <linearGradient id={bodyId} x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#282E28" />
-            <stop offset="50%" stopColor="#1E231E" />
-            <stop offset="100%" stopColor="#151815" />
+            <stop offset="0%" stopColor="#242a35" />
+            <stop offset="50%" stopColor="#1c222c" />
+            <stop offset="100%" stopColor="#141922" />
           </linearGradient>
           <linearGradient id={visorId} x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" stopColor="#0B0D0B" />
-            <stop offset="100%" stopColor="#151815" />
+            <stop offset="0%" stopColor="#0d1117" />
+            <stop offset="100%" stopColor="#151b24" />
           </linearGradient>
           <filter id={eyeGlowId} x="-20%" y="-20%" width="140%" height="140%">
             <feGaussianBlur stdDeviation="1.5" result="blur" />
@@ -63,16 +63,16 @@ function CuteRobotFigure({ mood = "happy", size = 48, isHovered = false }) {
           strokeLinecap="round"
         />
         {/* Antenna Pulsing Beacon */}
-        <circle cx="50" cy="8" r="5.5" fill="#C2F970" className="animate-pulse" />
+        <circle cx="50" cy="8" r="5.5" fill="#325ea8" className="animate-pulse" />
         <circle cx="50" cy="8" r="2.5" fill="#FFFFFF" />
 
         {/* --- Left Ear / Headphone --- */}
         <rect x="14" y="38" width="6" height="22" rx="3" fill="#303530" />
-        <rect x="17" y="42" width="2" height="14" rx="1" fill="#C2F970" opacity="0.8" />
+        <rect x="17" y="42" width="2" height="14" rx="1" fill="#325ea8" opacity="0.8" />
 
         {/* --- Right Ear / Headphone --- */}
         <rect x="80" y="38" width="6" height="22" rx="3" fill="#303530" />
-        <rect x="81" y="42" width="2" height="14" rx="1" fill="#C2F970" opacity="0.8" />
+        <rect x="81" y="42" width="2" height="14" rx="1" fill="#325ea8" opacity="0.8" />
 
         {/* --- Main Head Chassis --- */}
         <rect
@@ -114,13 +114,13 @@ function CuteRobotFigure({ mood = "happy", size = 48, isHovered = false }) {
             {/* Left Eye: Smiling Happy Arch */}
             <path
               d="M34 50 Q40 43 45 50"
-              stroke="#C2F970"
+              stroke="#325ea8"
               strokeWidth="4"
               strokeLinecap="round"
               fill="none"
             />
             {/* Right Eye: Big Glowing Lens */}
-            <circle cx="57" cy="48" r="6" fill="#C2F970" />
+            <circle cx="57" cy="48" r="6" fill="#325ea8" />
             <circle cx="58.5" cy="46" r="2" fill="#FFFFFF" />
           </g>
         ) : mood === "happy" ? (
@@ -128,14 +128,14 @@ function CuteRobotFigure({ mood = "happy", size = 48, isHovered = false }) {
           <g filter={`url(#${eyeGlowId})`}>
             <path
               d="M33 49 Q39 42 45 49"
-              stroke="#C2F970"
+              stroke="#325ea8"
               strokeWidth="4"
               strokeLinecap="round"
               fill="none"
             />
             <path
               d="M55 49 Q61 42 67 49"
-              stroke="#C2F970"
+              stroke="#325ea8"
               strokeWidth="4"
               strokeLinecap="round"
               fill="none"
@@ -144,21 +144,21 @@ function CuteRobotFigure({ mood = "happy", size = 48, isHovered = false }) {
         ) : (
           // Curious / Open Eyes
           <g filter={`url(#${eyeGlowId})`}>
-            <circle cx="39" cy="48" r="5.5" fill="#C2F970" />
+            <circle cx="39" cy="48" r="5.5" fill="#325ea8" />
             <circle cx="40.5" cy="46.5" r="2" fill="#FFFFFF" />
-            <circle cx="61" cy="48" r="5.5" fill="#C2F970" />
+            <circle cx="61" cy="48" r="5.5" fill="#325ea8" />
             <circle cx="62.5" cy="46.5" r="2" fill="#FFFFFF" />
           </g>
         )}
 
         {/* --- Cute Blushing Cheeks --- */}
-        <circle cx="31" cy="57" r="3" fill="#C2F970" opacity="0.35" />
-        <circle cx="69" cy="57" r="3" fill="#C2F970" opacity="0.35" />
+        <circle cx="31" cy="57" r="3" fill="#325ea8" opacity="0.35" />
+        <circle cx="69" cy="57" r="3" fill="#325ea8" opacity="0.35" />
 
         {/* Tiny Sweet Robot Smile */}
         <path
           d="M47 57 Q50 60 53 57"
-          stroke="#C2F970"
+          stroke="#325ea8"
           strokeWidth="2"
           strokeLinecap="round"
           fill="none"
@@ -167,8 +167,8 @@ function CuteRobotFigure({ mood = "happy", size = 48, isHovered = false }) {
 
         {/* --- Robot Little Floating Hands / Body Base --- */}
         <rect x="36" y="78" width="28" height="6" rx="3" fill="#202420" stroke="#303530" strokeWidth="1" />
-        <circle cx="33" cy="80" r="4.5" fill="#C2F970" opacity="0.9" />
-        <circle cx="67" cy="80" r="4.5" fill="#C2F970" opacity="0.9" />
+        <circle cx="33" cy="80" r="4.5" fill="#325ea8" opacity="0.9" />
+        <circle cx="67" cy="80" r="4.5" fill="#325ea8" opacity="0.9" />
       </svg>
     </div>
   );
@@ -180,39 +180,39 @@ function CuteRobotFigure({ mood = "happy", size = 48, isHovered = false }) {
 const knowledgeBase = [
   {
     triggers: ["who are you", "who is athiq", "about", "bio", "background", "introduce", "intro", "college", "education", "degree"],
-    reply: `Beep boop! 🤖 I'm **Athiq Bot**, personal companion for **M. Athiq Khan**!\n\nAthiq is an Artificial Intelligence and Machine Learning (AIML) engineering student at **Dhaanish Ahmed Chennai College of Engineering** in Chennai, India.\n\nHe specializes in **full-stack web development** (React.js, Node.js, JavaScript, Python) while creating visual magic with **prompt engineering, AI video generation, and video editing**! ✨`
+    reply: `Beep boop! I'm **Athiq Bot**, personal companion for **M. Athiq Khan**!\n\nAthiq is an Artificial Intelligence and Machine Learning (AIML) engineering student at **Dhaanish Ahmed Chennai College of Engineering** in Chennai, India.\n\nHe specializes in **full-stack web development** (React.js, Node.js, JavaScript, Python) while creating visual magic with **prompt engineering, AI video generation, and video editing**!`
   },
   {
     triggers: ["internship", "hire", "job", "freelance", "opportunity", "available", "work with", "collaborate"],
-    reply: `Awesome news! 🚀 Athiq is **actively open to high-impact internship opportunities** and select **freelance web development projects**!\n\nYou can chat with him directly on WhatsApp at [**+91 90433 95299**](https://wa.me/919043395299) or shoot an email to [**athiqkhan1221@gmail.com**](mailto:athiqkhan1221@gmail.com).`
+    reply: `Awesome news! Athiq is **actively open to high-impact internship opportunities** and select **freelance web development projects**!\n\nYou can chat with him directly on WhatsApp at [**+91 90433 95299**](https://wa.me/919043395299) or shoot an email to [**athiqkhan1221@gmail.com**](mailto:athiqkhan1221@gmail.com).`
   },
   {
     triggers: ["skills", "toolkit", "technologies", "tech stack", "languages", "what do you use", "tools"],
-    reply: `Here's Athiq's super-powered toolkit ⚡:\n\n• **Frontend & Backend:** HTML5, CSS3, JavaScript (ES6+), React.js, Node.js\n• **Programming:** Python (Algorithms, Data Structures, AI Scripting)\n• **AI Exploration:** Prompt Engineering, Machine Learning concepts\n• **Creative Media:** AI Video Generation & Timeline Video Editing\n• **Full-Stack:** RESTful APIs, Backend Foundations & Database Integration`
+    reply: `Here's Athiq's technical toolkit:\n\n• **Frontend & Backend:** HTML5, CSS3, JavaScript (ES6+), React.js, Node.js\n• **Programming:** Python (Algorithms, Data Structures, AI Scripting)\n• **AI Exploration:** Prompt Engineering, Machine Learning concepts\n• **Creative Media:** AI Video Generation & Timeline Video Editing\n• **Full-Stack:** RESTful APIs, Backend Foundations & Database Integration`
   },
   {
     triggers: ["projects", "what have you built", "work", "portfolio projects", "course explorer", "prompt lab"],
-    reply: `Athiq has built some really cool projects! 🛠️\n\n1. **Personal Developer Portfolio:** Bespoke editorial dark web experience built with Node.js & React.\n2. **Course Explorer Web App:** React application with live search and filter tags.\n3. **AI Video Creative Showcase:** Visual experiments in text-to-video diffusion & editing.\n4. **Screen-Time Awareness Dashboard:** Digital wellbeing metrics and focus analytics.\n5. **AI Prompt Lab:** Systematic testing of zero-shot vs few-shot system prompts.\n\nCheck them out in the [Selected Work](/#work) section!`
+    reply: `Athiq has built several projects:\n\n1. **Personal Developer Portfolio:** Bespoke editorial dark web experience built with Node.js & React.\n2. **Course Explorer Web App:** React application with live search and filter tags.\n3. **AI Video Creative Showcase:** Visual experiments in text-to-video diffusion & editing.\n4. **Screen-Time Awareness Dashboard:** Digital wellbeing metrics and focus analytics.\n5. **AI Prompt Lab:** Systematic testing of zero-shot vs few-shot system prompts.\n\nCheck them out in the [Selected Work](/#work) section!`
   },
   {
     triggers: ["contact", "reach", "email", "phone", "whatsapp", "number", "call", "message", "instagram", "linkedin"],
-    reply: `Here is how you can connect with Athiq 📬:\n\n• **WhatsApp:** [**+91 90433 95299**](https://wa.me/919043395299) *(Fastest response!)*\n• **Email:** [**athiqkhan1221@gmail.com**](mailto:athiqkhan1221@gmail.com)\n• **LinkedIn:** [**linkedin.com/in/athiq-khan-2aa177433**](https://www.linkedin.com/in/athiq-khan-2aa177433)\n• **Instagram:** [**instagram.com/athiqqqq**](https://www.instagram.com/athiqqqq)\n• **Location:** Chennai, India (IST / UTC+5:30)`
+    reply: `Here is how you can connect with Athiq:\n\n• **WhatsApp:** [**+91 90433 95299**](https://wa.me/919043395299) *(Fastest response!)*\n• **Email:** [**athiqkhan1221@gmail.com**](mailto:athiqkhan1221@gmail.com)\n• **LinkedIn:** [**linkedin.com/in/athiq-khan-2aa177433**](https://www.linkedin.com/in/athiq-khan-2aa177433)\n• **Instagram:** [**instagram.com/athiqqqq**](https://www.instagram.com/athiqqqq)\n• **Location:** Chennai, India (IST / UTC+5:30)`
   },
   {
     triggers: ["ai video", "video editing", "video", "playground", "creative", "reels"],
-    reply: `Athiq loves the intersection of code and visual cinema! 🎬\n\nIn his [Creative Playground](/#playground), he directs text-to-video diffusion models for 9:16 vertical product commercials, 16:9 cinematic tracking shots, and precision beat-sync video editing.`
+    reply: `Athiq loves the intersection of code and visual cinema.\n\nIn his creative experiments, he directs text-to-video diffusion models for 9:16 vertical product commercials, 16:9 cinematic tracking shots, and precision beat-sync video editing.`
   },
   {
     triggers: ["location", "city", "where do you live", "where are you from", "india", "chennai"],
-    reply: `Athiq is based in vibrant **Chennai, Tamil Nadu, India**! 🌴 He collaborates remotely across different timezones and works smoothly in Indian Standard Time (IST / UTC+5:30).`
+    reply: `Athiq is based in vibrant **Chennai, Tamil Nadu, India**. He collaborates remotely across different timezones and works smoothly in Indian Standard Time (IST / UTC+5:30).`
   },
   {
     triggers: ["python", "machine learning", "aiml", "ai"],
-    reply: `Athiq studies Python and AIML as his university degree at Dhaanish Ahmed College! 🧠 He enjoys coding algorithmic solutions, understanding model pipelines, and testing structured prompt conditioning.`
+    reply: `Athiq studies Python and AIML as his university degree at Dhaanish Ahmed College. He enjoys coding algorithmic solutions, understanding model pipelines, and testing structured prompt conditioning.`
   },
   {
     triggers: ["react", "nodejs", "node.js", "frontend", "backend", "web dev"],
-    reply: `Web development is Athiq's primary passion! 💻 He crafts modular, responsive experiences using **React.js** and **Node.js**, prioritizing clean component hierarchy and high performance.`
+    reply: `Web development is Athiq's primary passion. He crafts modular, responsive experiences using **React.js** and **Node.js**, prioritizing clean component hierarchy and high performance.`
   }
 ];
 
@@ -224,7 +224,7 @@ export default function AthiqChatbot() {
     {
       id: "welcome-1",
       sender: "bot",
-      text: "Beep boop! 👋 I'm **Athiq Bot**, Athiq's friendly AI companion!\n\nI can tell you all about Athiq's projects, technical skills, or connect you directly with him. What would you like to know?",
+      text: "Beep boop! I'm **Athiq Bot**, Athiq's friendly AI companion!\n\nI can tell you all about Athiq's projects, technical skills, or connect you directly with him. What would you like to know?",
       time: "Just now"
     }
   ]);
@@ -252,10 +252,10 @@ export default function AthiqChatbot() {
   }, [isOpen, messages, isTyping]);
 
   const quickPrompts = [
-    "⚡ What are Athiq's skills?",
-    "🚀 Tell me about his projects",
-    "💼 Is he open for internships?",
-    "💬 Message Athiq on WhatsApp"
+    "What are Athiq's skills?",
+    "Tell me about his projects",
+    "Is he open for internships?",
+    "Message Athiq on WhatsApp"
   ];
 
   const generateAnswer = (userQuery) => {
@@ -268,7 +268,7 @@ export default function AthiqChatbot() {
     }
 
     return (
-      `Beep! 🤖 I'd love to help you with that! Athiq is an AIML student and full-stack web developer in Chennai.\n\n` +
+      `Beep! I'd love to help you with that! Athiq is an AIML student and full-stack web developer in Chennai.\n\n` +
       `For specific questions or project discussions, you can reach him directly on WhatsApp at [**+91 90433 95299**](https://wa.me/919043395299) or email [**athiqkhan1221@gmail.com**](mailto:athiqkhan1221@gmail.com). He usually replies within 24 hours!`
     );
   };
@@ -336,7 +336,7 @@ export default function AthiqChatbot() {
                     href={match[2]}
                     target={match[2].startsWith("http") ? "_blank" : "_self"}
                     rel="noopener noreferrer"
-                    className="text-[#C2F970] underline hover:text-[#D5FFA0] font-semibold"
+                    className="text-[#325ea8] underline hover:text-[#4d7bc9] font-semibold"
                     onClick={() => {
                       if (match[2].startsWith("#") || match[2].startsWith("/#")) setIsOpen(false);
                     }}
@@ -388,9 +388,9 @@ export default function AthiqChatbot() {
                 <div className="flex items-center gap-1.5">
                   <h3 className="font-heading font-extrabold text-sm text-[#F4F3ED] flex items-center gap-1">
                     <span>Athiq Bot</span>
-                    <span className="text-[#C2F970]">🤖</span>
+                    
                   </h3>
-                  <span className="bg-[#C2F970]/15 text-[#C2F970] text-[9px] font-mono px-2 py-0.5 rounded-full border border-[#C2F970]/30 font-bold uppercase tracking-wider">
+                  <span className="bg-[#325ea8]/15 text-[#325ea8] text-[9px] font-mono px-2 py-0.5 rounded-full border border-[#325ea8]/30 font-bold uppercase tracking-wider">
                     ONLINE
                   </span>
                 </div>
@@ -439,7 +439,7 @@ export default function AthiqChatbot() {
                 <div
                   className={`max-w-[82%] rounded-2xl px-4 py-3 text-xs sm:text-[13px] leading-relaxed ${
                     msg.sender === "user"
-                      ? "bg-[#C2F970] text-[#111311] font-medium rounded-tr-none shadow-md shadow-[#C2F970]/10"
+                      ? "bg-[#325ea8] text-white font-medium rounded-tr-none shadow-md shadow-[#325ea8]/20"
                       : "bg-[#1E231E] text-[#A5ACA5] border border-[#303530] rounded-tl-none shadow-sm"
                   }`}
                 >
@@ -448,7 +448,7 @@ export default function AthiqChatbot() {
                   </div>
                   <div
                     className={`text-[9px] font-mono mt-1 text-right ${
-                      msg.sender === "user" ? "text-[#111311]/70" : "text-[#6E756E]"
+                      msg.sender === "user" ? "text-white/80" : "text-[#6E756E]"
                     }`}
                   >
                     {msg.time}
@@ -462,9 +462,9 @@ export default function AthiqChatbot() {
               <div className="flex items-center gap-2.5 text-xs text-[#A5ACA5] pl-1">
                 <CuteRobotFigure mood="curious" size={26} />
                 <div className="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-[#1E231E] border border-[#303530]">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#C2F970] animate-bounce" />
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#C2F970] animate-bounce [animation-delay:0.2s]" />
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#C2F970] animate-bounce [animation-delay:0.4s]" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#325ea8] animate-bounce" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#325ea8] animate-bounce [animation-delay:0.2s]" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#325ea8] animate-bounce [animation-delay:0.4s]" />
                   <span className="font-mono text-[11px] text-[#A5ACA5] ml-1">
                     Athiq Bot is typing...
                   </span>
@@ -482,7 +482,7 @@ export default function AthiqChatbot() {
                 key={pIdx}
                 type="button"
                 onClick={() => handleSendMessage(prompt)}
-                className="whitespace-nowrap text-[11px] font-body font-medium px-3 py-1.5 rounded-full bg-[#111311] border border-[#303530] text-[#A5ACA5] hover:text-[#C2F970] hover:border-[#C2F970] hover:bg-[#1C201C] transition-all"
+                className="whitespace-nowrap text-[11px] font-body font-medium px-3 py-1.5 rounded-full bg-[#111311] border border-[#303530] text-[#A5ACA5] hover:text-[#325ea8] hover:border-[#325ea8] hover:bg-[#1C201C] transition-all"
               >
                 {prompt}
               </button>
@@ -505,7 +505,7 @@ export default function AthiqChatbot() {
                 onChange={(e) => setInputValue(e.target.value)}
                 onKeyDown={handleKeyDown}
                 placeholder="Ask me anything about Athiq..."
-                className="flex-1 bg-[#111311] border border-[#303530] focus:border-[#C2F970] rounded-xl px-4 py-2.5 text-xs text-[#F4F3ED] placeholder-[#6E756E] focus:outline-none transition-colors"
+                className="flex-1 bg-[#111311] border border-[#303530] focus:border-[#325ea8] rounded-xl px-4 py-2.5 text-xs text-[#F4F3ED] placeholder-[#6E756E] focus:outline-none transition-colors"
               />
 
               <button
@@ -513,7 +513,7 @@ export default function AthiqChatbot() {
                 disabled={!inputValue.trim()}
                 className={`p-2.5 rounded-xl transition-all ${
                   inputValue.trim()
-                    ? "bg-[#C2F970] text-[#111311] hover:bg-[#D5FFA0] cursor-pointer shadow-md shadow-[#C2F970]/20"
+                    ? "bg-[#325ea8] text-white hover:bg-[#264b8a] cursor-pointer shadow-md shadow-[#325ea8]/20"
                     : "bg-[#202420] text-[#6E756E] cursor-not-allowed border border-[#303530]"
                 }`}
                 aria-label="Send message"
@@ -528,21 +528,7 @@ export default function AthiqChatbot() {
             FLOATING CUTE ROBOT LAUNCHER (MAGNETIC ATTRACTIVE DESIGN)
             ==================================================================== */
         <div className="relative flex flex-col items-end">
-          {/* Floating Speech Bubble Inviting to Touch */}
-          {!hasInteracted && (
-            <div
-              onClick={handleOpenChat}
-              className="mb-2.5 mr-1 cursor-pointer bg-[#1E231E]/95 backdrop-blur-md border border-[#C2F970]/50 text-[#F4F3ED] text-xs font-heading font-semibold py-2 px-3.5 rounded-2xl rounded-br-none shadow-xl shadow-black/60 flex items-center gap-2 transition-all hover:scale-105 animate-bounce [animation-duration:2.5s]"
-            >
-              <span className="text-sm">👋</span>
-              <span>
-                Hi! Tap me to <span className="text-[#C2F970]">chat!</span>
-              </span>
-              <span className="w-2 h-2 rounded-full bg-[#C2F970] animate-pulse" />
-            </div>
-          )}
-
-          {/* Interactive Floating Cute Robot Stage */}
+          {/* Interactive Floating Robot Trigger (Only Robot) */}
           <button
             type="button"
             onClick={handleOpenChat}
@@ -554,37 +540,18 @@ export default function AthiqChatbot() {
               setIsLauncherHovered(false);
               setRobotMood("happy");
             }}
-            className="group relative flex items-center gap-3 bg-[#1A1E1A] hover:bg-[#202520] border-2 border-[#303530] hover:border-[#C2F970] pl-3 pr-4 py-2.5 rounded-full shadow-2xl shadow-black/80 transition-all duration-300 hover:scale-105 hover:shadow-[#C2F970]/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#C2F970]"
-            aria-label="Touch Athiq Bot to start conversation"
+            className="group relative w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-[#1A1E1A] hover:bg-[#202520] border-2 border-[#303530] hover:border-[#325ea8] shadow-2xl shadow-black/80 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-[#325ea8]/30 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#325ea8] cursor-pointer"
+            aria-label="Open Assistant"
           >
-            {/* Cute Robot Mascot with Gentle Hover Effect */}
-            <div className="relative">
-              {/* Subtle Glowing Aura */}
-              <div className="absolute inset-0 rounded-full bg-[#C2F970]/20 blur-md group-hover:bg-[#C2F970]/40 transition-colors" />
+            {/* Subtle Glowing Aura */}
+            <div className="absolute inset-0 rounded-full bg-[#325ea8]/20 blur-md group-hover:bg-[#325ea8]/40 transition-colors" />
 
-              <div className="relative transform transition-transform duration-300 group-hover:-translate-y-1 group-hover:rotate-3">
-                <CuteRobotFigure mood={isLauncherHovered ? "wink" : "happy"} size={44} isHovered={isLauncherHovered} />
-              </div>
-
-              {/* Online Green Indicator Dot */}
-              <span className="absolute -top-0.5 -right-0.5 w-3 h-3 rounded-full bg-[#25D366] border-2 border-[#1A1E1A] shadow-sm" />
+            <div className="relative transform transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:scale-105">
+              <CuteRobotFigure mood={isLauncherHovered ? "wink" : "happy"} size={48} isHovered={isLauncherHovered} />
             </div>
 
-            {/* Attractive Invitation Typography */}
-            <div className="text-left">
-              <div className="flex items-center gap-1.5">
-                <span className="font-heading font-extrabold text-xs text-[#F4F3ED] group-hover:text-[#C2F970] transition-colors">
-                  Athiq Bot
-                </span>
-                <span className="text-xs group-hover:scale-125 transition-transform">✨</span>
-              </div>
-              <span className="font-mono text-[10px] text-[#A5ACA5] block group-hover:text-[#F4F3ED] transition-colors">
-                Tap to Chat
-              </span>
-            </div>
-
-            {/* Glowing Accent Ring on Hover */}
-            <div className="w-2 h-2 rounded-full bg-[#C2F970] animate-ping opacity-75 group-hover:opacity-100" />
+            {/* Online Status Dot */}
+            <span className="absolute top-0.5 right-0.5 w-3.5 h-3.5 rounded-full bg-[#25D366] border-2 border-[#1A1E1A] shadow-sm" />
           </button>
         </div>
       )}
